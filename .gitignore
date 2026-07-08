@@ -13,6 +13,8 @@ android/captures
 android/.firebase
 android/functions/node_modules
 android/*.apk
+android/app/build/
+android/dist/*.apk
 android/*.aab
 
 # Web

@@ -353,7 +353,7 @@
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://github.com/ramakrishna-sunkara/krishak-seva" target="_blank" rel="noopener">📦 View Source Code</a>
-        <a class="btn btn-secondary" href="https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest" target="_blank" rel="noopener">📲 Download Android APK</a>
+        <a class="btn btn-secondary" id="apkDownloadBtn" href="https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk" target="_blank" rel="noopener">📲 Download Android APK</a>
         <a class="btn btn-blue" id="webLiveBtn" href="#" target="_blank" rel="noopener" style="display:none;">🌐 Open Web App</a>
       </div>
     </div>
@@ -508,15 +508,14 @@
           <h3>🌐 Web App Demo</h3>
           <div class="video-embed" id="webVideoEmbed">
             <div class="video-placeholder">
-              <strong>Web demo — coming soon</strong>
-              YouTube link will be added here.
+              <strong>Loading web demo…</strong>
             </div>
           </div>
           <div class="video-links">
             <span id="webVideoLinkText">YouTube: </span>
-            <a id="webVideoLink" href="#" style="color:var(--slate-500); pointer-events:none;">Coming soon</a>
+            <a id="webVideoLink" href="https://www.youtube.com/watch?v=ne3afD0EVVA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ne3afD0EVVA</a>
             <br /><br />
-            <small>Web platform walkthrough — dashboard, crop advisor, IVR, SOS (link to be added)</small>
+            <small>Web platform walkthrough — dashboard, crop advisor, IVR helpline, SOS, and AI chatbot</small>
           </div>
         </div>
 
@@ -553,11 +552,11 @@
             <p>Flask backend + vanilla JS frontend</p>
           </div>
         </a>
-        <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest" target="_blank" rel="noopener">
+        <a class="link-card" id="apkLinkCard" href="https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk" target="_blank" rel="noopener">
           <div class="link-icon apk">📲</div>
           <div>
-            <h4>Android APK (Release)</h4>
-            <p>Install on Android — enable unknown sources</p>
+            <h4>Android APK (Debug build)</h4>
+            <p>Direct download · v1.0.1 · enable “Install unknown apps”</p>
           </div>
         </a>
         <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/APP_OVERVIEW.md" target="_blank" rel="noopener">
@@ -669,7 +668,8 @@
     // ═══════════════════════════════════════════════════════════════
     const CONFIG = {
       androidDemoVideoUrl: "https://youtu.be/poaejXC6EO4",
-      webDemoVideoUrl: "", // placeholder — add YouTube URL when ready
+      webDemoVideoUrl: "https://www.youtube.com/watch?v=ne3afD0EVVA",
+      apkDownloadUrl: "https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk",
       webLiveUrl: "",
       pitchDeckUrl: ""
     };
@@ -713,6 +713,11 @@
 
     setupVideo("androidVideoEmbed", "androidVideoLink", CONFIG.androidDemoVideoUrl);
     setupVideo("webVideoEmbed", "webVideoLink", CONFIG.webDemoVideoUrl);
+
+    if (CONFIG.apkDownloadUrl) {
+      document.getElementById("apkDownloadBtn").href = CONFIG.apkDownloadUrl;
+      document.getElementById("apkLinkCard").href = CONFIG.apkDownloadUrl;
+    }
 
     if (CONFIG.webLiveUrl) {
       const btn = document.getElementById("webLiveBtn");

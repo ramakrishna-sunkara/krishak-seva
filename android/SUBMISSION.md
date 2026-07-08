@@ -75,7 +75,7 @@ This is an **Android app** (not only a website). Also use **one or more** of the
 
 | Option | What to submit | Best for |
 |--------|----------------|----------|
-| **A. GitHub Release (recommended)** | `https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest` | Judges download APK directly |
+| **A. GitHub Release (recommended)** | `https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk` | Judges download debug APK directly |
 | **B. Demo video** | YouTube / Google Drive link of 3–5 min walkthrough | Shows app working without install |
 
 **Your recording (local):**
@@ -105,7 +105,17 @@ APK: https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest
 
 **Recommended:** Submit **GitHub Releases URL + demo video link** in the description field if the form allows only one URL, put the video link and mention APK in GitHub Releases in the description.
 
-**APK location after build:**
+**APK direct download (debug build v1.0.1):**
+```
+https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk
+```
+
+Rebuild & re-upload:
+```bash
+cd android && ./build-and-release.sh
+```
+
+**APK build output:**
 ```
 app/build/outputs/apk/release/app-release-unsigned.apk
 ```
