@@ -35,7 +35,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import kotlinx.coroutines.launch
 
 @Composable
@@ -168,7 +168,7 @@ fun KisanTextField(
 @Preview(showBackground = true, name = "Primary Button")
 @Composable
 private fun KisanPrimaryButtonPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         Column(
             modifier = Modifier.padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -183,7 +183,7 @@ private fun KisanPrimaryButtonPreview() {
 @Preview(showBackground = true, name = "Outlined Button")
 @Composable
 private fun KisanOutlinedButtonPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         Column(
             modifier = Modifier.padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
@@ -198,7 +198,7 @@ private fun KisanOutlinedButtonPreview() {
 @Preview(showBackground = true, name = "Text Field")
 @Composable
 private fun KisanTextFieldPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         Column(
             modifier = Modifier.padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)

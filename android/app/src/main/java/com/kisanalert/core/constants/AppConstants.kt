@@ -3,8 +3,8 @@ package com.kisanalert.core.constants
 object AppConstants {
     const val APP_DISPLAY_NAME: String = "कृषकसेवा"
     const val SPLASH_DELAY_MS: Long = 2000L
-    const val DATABASE_NAME: String = "kisan_alert_db"
-    const val DATASTORE_NAME: String = "kisan_alert_prefs"
+    const val DATABASE_NAME: String = "krishak_seva_db"
+    const val DATASTORE_NAME: String = "krishak_seva_prefs"
     const val FIRESTORE_SYNC_TIMEOUT_MS: Long = 8_000L
     const val STORAGE_UPLOAD_TIMEOUT_MS: Long = 30_000L
     const val CLOUD_FUNCTION_TIMEOUT_MS: Long = 45_000L

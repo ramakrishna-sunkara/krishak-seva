@@ -15,7 +15,7 @@ import com.kisanalert.presentation.splash.SplashScreen
 import com.kisanalert.presentation.voice.VoiceAssistantScreen
 
 @Composable
-fun KisanNavHost(
+fun KrishakSevaNavHost(
     navController: NavHostController = rememberNavController()
 ) {
     NavHost(

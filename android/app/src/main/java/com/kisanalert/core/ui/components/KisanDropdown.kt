@@ -20,7 +20,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -83,7 +83,7 @@ fun <T> KisanDropdownField(
 @Preview(showBackground = true, name = "Dropdown — Selected")
 @Composable
 private fun KisanDropdownFieldSelectedPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         Column(modifier = Modifier.padding(16.dp)) {
             KisanDropdownField(
                 label = "Language",
@@ -100,7 +100,7 @@ private fun KisanDropdownFieldSelectedPreview() {
 @Preview(showBackground = true, name = "Dropdown — Empty")
 @Composable
 private fun KisanDropdownFieldEmptyPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         Column(modifier = Modifier.padding(16.dp)) {
             KisanDropdownField(
                 label = "Crop Type",

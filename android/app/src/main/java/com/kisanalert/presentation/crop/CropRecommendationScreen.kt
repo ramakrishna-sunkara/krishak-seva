@@ -56,7 +56,7 @@ import com.kisanalert.R
 import com.kisanalert.core.ui.components.DataSourceBadge
 import com.kisanalert.core.ui.components.KisanPrimaryButton
 import com.kisanalert.core.ui.components.ServerErrorCard
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.core.ui.theme.KisanColors
 import com.kisanalert.domain.model.CropRecommendation
 import com.kisanalert.core.ui.localization.localizedLabel
@@ -374,7 +374,7 @@ private fun RecommendationDetailRow(
 @Preview(showBackground = true)
 @Composable
 private fun CropRecommendationCardPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         CropRecommendationCard(
             recommendation = CropRecommendation(
                 cropName = "Cotton",

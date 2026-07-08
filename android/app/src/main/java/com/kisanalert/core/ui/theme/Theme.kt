@@ -59,7 +59,7 @@ object KisanColors {
 }
 
 @Composable
-fun KisanAlertTheme(
+fun KrishakSevaTheme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(

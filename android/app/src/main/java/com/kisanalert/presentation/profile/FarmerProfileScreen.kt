@@ -70,7 +70,7 @@ import com.kisanalert.core.ui.components.KisanOutlinedButton
 import com.kisanalert.core.ui.components.KisanPrimaryButton
 import com.kisanalert.core.ui.components.KisanTextField
 import com.kisanalert.core.ui.components.LocationFormFields
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.core.ui.theme.KisanColors
 import com.kisanalert.domain.model.PostOfficeLocation
 import com.kisanalert.domain.model.PreferredLanguage
@@ -623,7 +623,7 @@ private fun ProfileEditSection(
 @Preview(showBackground = true)
 @Composable
 private fun ProfileViewContentPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         ProfileViewContent(
             uiState = FarmerProfileUiState(
                 isLoading = false,

@@ -1,6 +1,8 @@
-# Krishak Seva
+# Krishak Seva (कृषकसेवा)
 
 Two independent projects in one repository.
+
+**Repository:** [github.com/ramakrishna-sunkara/krishak-seva](https://github.com/ramakrishna-sunkara/krishak-seva)
 
 | Project | Folder | Description |
 |---------|--------|-------------|

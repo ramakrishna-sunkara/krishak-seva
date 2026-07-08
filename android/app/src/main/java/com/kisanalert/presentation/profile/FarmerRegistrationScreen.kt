@@ -66,7 +66,7 @@ import com.kisanalert.core.ui.components.KisanDropdownField
 import com.kisanalert.core.ui.components.KisanPrimaryButton
 import com.kisanalert.core.ui.components.KisanTextField
 import com.kisanalert.core.ui.components.LocationFormFields
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.core.ui.localization.localizedLabel
 import com.kisanalert.core.ui.localization.messageResId
 import com.kisanalert.domain.model.PostOfficeLocation
@@ -608,7 +608,7 @@ private fun StepContainer(
 @Preview(showBackground = true)
 @Composable
 private fun FarmerRegistrationContentPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         FarmerRegistrationContent(
             uiState = FarmerRegistrationUiState(
                 name = "Rama Krishna",

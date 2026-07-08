@@ -36,7 +36,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.kisanalert.R
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.core.ui.theme.KisanColors
 
 @Composable
@@ -143,7 +143,7 @@ private fun SplashContent(uiState: SplashUiState) {
 @Preview(showBackground = true)
 @Composable
 private fun SplashContentPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         SplashContent(uiState = SplashUiState())
     }
 }

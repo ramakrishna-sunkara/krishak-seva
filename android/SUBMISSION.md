@@ -1,4 +1,4 @@
-# Hack2skill Prototype Submission — Krishak Seva (कृषकसेवा)
+# Krishak Seva — Prototype Submission (कृषकसेवा)
 
 **Deadline:** 8 July 2026, 11:59 PM IST  
 **Submit at:** Hack2skill dashboard → Submissions section
@@ -9,7 +9,7 @@
 
 ### Brief description (short — ~150 words)
 
-**कृषकसेवा** is an AI-powered Android farming assistant built for Indian farmers, especially in Telugu-speaking regions. Farmers register their land profile (pincode, village, crop, soil, water source) and get personalized advice from one dashboard: smart crop recommendations by season (Kharif/Rabi/Zaid) **enriched with district-level CGWB groundwater data from [OpenCity.in](https://data.opencity.in/)**, weather + irrigation guidance, leaf disease detection via camera, voice Q&A in English or Telugu, and push alerts for farm risks.
+**Krishak Seva** is an AI-powered Android farming assistant built for Indian farmers, especially in Telugu-speaking regions. Farmers register their land profile (pincode, village, crop, soil, water source) and get personalized advice from one dashboard: smart crop recommendations by season (Kharif/Rabi/Zaid) **enriched with district-level CGWB groundwater data from [OpenCity.in](https://data.opencity.in/)**, weather + irrigation guidance, leaf disease detection via camera or gallery upload, voice Q&A in English or Telugu, and push alerts for farm risks.
 
 The app uses Google Gemini AI through secure Firebase Cloud Functions (API keys never stored on the device), OpenWeather for forecasts, and India Post pincode API for easy location entry. It works offline with cached data and local fallbacks when the network is weak — designed for real village conditions.
 
@@ -19,7 +19,7 @@ The app uses Google Gemini AI through secure Firebase Cloud Functions (API keys 
 
 ### Brief description (one paragraph — if field is smaller)
 
-कृषकसेवा is a mobile AI farming companion for Indian farmers. It combines crop recommendations, weather and irrigation advisories, AI crop disease scanning from leaf photos, a Telugu/English voice assistant, and push notifications — all personalized to the farmer’s profile. Built with Kotlin, Jetpack Compose, Firebase, and Google Gemini.
+Krishak Seva is a mobile AI farming companion for Indian farmers. It combines crop recommendations, weather and irrigation advisories, AI crop disease scanning from leaf photos (camera or gallery), a Telugu/English voice assistant, and push notifications — all personalized to the farmer’s profile. Built with Kotlin, Jetpack Compose, Firebase, and Google Gemini.
 
 ---
 
@@ -49,10 +49,8 @@ Kotlin, Jetpack Compose, Material 3, Clean Architecture, MVI, Hilt, Room, DataSt
 ### GitHub repository URL
 
 ```
-https://github.com/YOUR_USERNAME/krishak-seva
+https://github.com/ramakrishna-sunkara/krishak-seva
 ```
-
-Replace `YOUR_USERNAME` after you push (see checklist below).
 
 ---
 
@@ -62,7 +60,7 @@ This is an **Android app** (not a website). Use **one or more** of these as your
 
 | Option | What to submit | Best for |
 |--------|----------------|----------|
-| **A. GitHub Release (recommended)** | `https://github.com/YOUR_USERNAME/krishak-seva/releases/latest` | Judges download APK directly |
+| **A. GitHub Release (recommended)** | `https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest` | Judges download APK directly |
 | **B. Demo video** | YouTube / Google Drive link of 3–5 min walkthrough | Shows app working without install |
 | **C. Google Drive APK** | Public link to `app-release-unsigned.apk` | Quick share if no GitHub yet |
 
@@ -99,7 +97,7 @@ git add .
 git commit -m "Krishak Seva — AI farming assistant for Indian farmers"
 
 # Create repo on GitHub (github.com → New repository → krishak-seva → Public)
-git remote add origin https://github.com/YOUR_USERNAME/krishak-seva.git
+git remote add origin https://github.com/ramakrishna-sunkara/krishak-seva.git
 git branch -M main
 git push -u origin main
 ```

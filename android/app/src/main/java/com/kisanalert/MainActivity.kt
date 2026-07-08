@@ -6,9 +6,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.kisanalert.core.notification.KisanNotificationHelper
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.domain.repository.VoiceInputOutputRepository
-import com.kisanalert.presentation.navigation.KisanNavHost
+import com.kisanalert.presentation.navigation.KrishakSevaNavHost
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -26,8 +26,8 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         notificationHelper.createNotificationChannels()
         setContent {
-            KisanAlertTheme {
-                KisanNavHost()
+            KrishakSevaTheme {
+                KrishakSevaNavHost()
             }
         }
     }

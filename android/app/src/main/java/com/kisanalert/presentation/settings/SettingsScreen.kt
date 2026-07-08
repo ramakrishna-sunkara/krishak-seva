@@ -64,7 +64,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.kisanalert.R
 import com.kisanalert.domain.model.PreferredLanguage
 import com.kisanalert.core.ui.components.KisanOutlinedButton
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.core.ui.theme.KisanColors
 import com.kisanalert.core.ui.components.LanguagePreferenceSection
 
@@ -366,7 +366,7 @@ private fun AboutCard(appVersion: String) {
 @Preview(showBackground = true)
 @Composable
 private fun SettingsContentPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         SettingsContent(
             uiState = SettingsUiState(
                 isLoading = false,

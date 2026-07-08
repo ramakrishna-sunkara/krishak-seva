@@ -63,7 +63,7 @@ import com.kisanalert.R
 import com.kisanalert.core.ui.components.KisanOutlinedButton
 import com.kisanalert.core.ui.components.KisanPrimaryButton
 import com.kisanalert.core.ui.components.KisanTextField
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.core.ui.theme.KisanColors
 import com.kisanalert.core.ui.localization.localizedLabel
 import com.kisanalert.domain.model.PreferredLanguage
@@ -419,7 +419,7 @@ private fun AuthDivider() {
 @Preview(showBackground = true)
 @Composable
 private fun WelcomeAuthStepPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         AuthContent(
             uiState = AuthUiState(),
             languageOptions = PreferredLanguage.entries,

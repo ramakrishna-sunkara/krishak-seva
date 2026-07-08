@@ -77,7 +77,7 @@ Your daily snapshot at a glance:
 - **Farm tips and alerts** based on weather + your crop
 
 ### 5. Crop Doctor (leaf disease scanner)
-- Open the camera and photograph affected **crop leaves**
+- Take a photo with the camera **or upload a leaf image from gallery**
 - AI analyzes the image and returns:
   - Likely disease name
   - Confidence level

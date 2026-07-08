@@ -64,7 +64,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.material.icons.rounded.AutoAwesome
 import com.kisanalert.core.ui.KisanScaffoldDefaults
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 import com.kisanalert.core.ui.theme.KisanColors
 import com.kisanalert.domain.model.AlertType
 import com.kisanalert.domain.model.AiRecommendation
@@ -735,7 +735,7 @@ private fun AlertCard(alert: DashboardAlert) {
 @Preview(showBackground = true)
 @Composable
 private fun DashboardContentPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         DashboardContent(
             dashboardData = DashboardData(
                 farmerName = "Rama Krishna",

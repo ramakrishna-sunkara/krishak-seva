@@ -100,4 +100,4 @@ com.kisanalert/
 4. Create `*UiState`, sealed `*Event`, and `*ViewModel` extending `MviViewModel`.
 5. Build Compose screen observing `uiState` and dispatching events.
 6. Register bindings in `di/`.
-7. Add navigation route in `KisanNavHost.kt`.
+7. Add navigation route in `KrishakSevaNavHost.kt`.

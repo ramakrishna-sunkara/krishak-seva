@@ -7,7 +7,7 @@ import dagger.hilt.android.HiltAndroidApp
 import javax.inject.Inject
 
 @HiltAndroidApp
-class KisanAlertApplication : Application() {
+class KrishakSevaApplication : Application() {
     @Inject
     lateinit var appLocaleInitializer: AppLocaleInitializer
 

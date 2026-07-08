@@ -16,7 +16,7 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kisanalert.R
-import com.kisanalert.core.ui.theme.KisanAlertTheme
+import com.kisanalert.core.ui.theme.KrishakSevaTheme
 
 enum class KisanAppIconStyle {
     BULLOCK_CART,
@@ -65,7 +65,7 @@ fun KisanAppIconFromDrawable(
 @Preview(showBackground = true, name = "App Icons")
 @Composable
 private fun KisanAppIconPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         Row(
             horizontalArrangement = Arrangement.spacedBy(24.dp),
             modifier = Modifier.padding(16.dp)
@@ -87,7 +87,7 @@ private fun KisanAppIconPreview() {
 @Preview(showBackground = true, name = "Splash Size Icon")
 @Composable
 private fun KisanAppIconSplashPreview() {
-    KisanAlertTheme {
+    KrishakSevaTheme {
         KisanAppIcon(
             modifier = Modifier
                 .padding(16.dp)
