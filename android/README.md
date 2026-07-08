@@ -12,8 +12,6 @@
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Code structure, MVI pattern, and how to add features |
 | [GROUNDWATER_FEATURE.md](GROUNDWATER_FEATURE.md) | Groundwater-aware crop recommendations |
 | [PROJECT_WRITEUP.md](PROJECT_WRITEUP.md) | Problem, solution, tools, and architecture diagram |
-| [SUBMISSION.md](SUBMISSION.md) | Hackathon submission checklist |
-| [PITCH_DECK.md](PITCH_DECK.md) | Pitch deck slide content |
 
 ## Tech stack
 

@@ -573,13 +573,6 @@
             <p>Non-technical product walkthrough</p>
           </div>
         </a>
-        <a class="link-card" id="pitchDeckCard" href="#" target="_blank" rel="noopener" style="display:none;">
-          <div class="link-icon docs">📊</div>
-          <div>
-            <h4>Pitch Deck PDF</h4>
-            <p>Slides for presentation</p>
-          </div>
-        </a>
       </div>
     </div>
   </section>
@@ -606,11 +599,6 @@
             <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/APP_OVERVIEW.md" target="_blank">Read →</a></td>
           </tr>
           <tr>
-            <td><strong>Submission Guide</strong></td>
-            <td>Hackathon copy-paste text, checklist, demo script</td>
-            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/SUBMISSION.md" target="_blank">Read →</a></td>
-          </tr>
-          <tr>
             <td><strong>Architecture</strong></td>
             <td>Clean Architecture, MVI, Firebase, data flow</td>
             <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/ARCHITECTURE.md" target="_blank">Read →</a></td>
@@ -621,24 +609,14 @@
             <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/GROUNDWATER_FEATURE.md" target="_blank">Read →</a></td>
           </tr>
           <tr>
-            <td><strong>Pitch Deck Content</strong></td>
-            <td>Slide-by-slide content for presentation PDF</td>
-            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/PITCH_DECK.md" target="_blank">Read →</a></td>
-          </tr>
-          <tr>
-            <td><strong>Android README</strong></td>
+            <td><strong>Android Guide</strong></td>
             <td>Build instructions, Firebase setup, developer guide</td>
             <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/README.md" target="_blank">Read →</a></td>
           </tr>
           <tr>
-            <td><strong>Web README</strong></td>
+            <td><strong>Web Guide</strong></td>
             <td>Flask setup, API overview, Google Cloud Run deploy</td>
             <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/web/README.md" target="_blank">Read →</a></td>
-          </tr>
-          <tr>
-            <td><strong>Demo Video Guide</strong></td>
-            <td>How to upload and submit the Android screen recording</td>
-            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/DEMO_VIDEO.md" target="_blank">Read →</a></td>
           </tr>
         </tbody>
       </table>
@@ -663,8 +641,7 @@
       androidDemoVideoUrl: "https://youtu.be/poaejXC6EO4",
       webDemoVideoUrl: "https://www.youtube.com/watch?v=ne3afD0EVVA",
       apkDownloadUrl: "https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk",
-      webLiveUrl: "https://sagging-rewind-happiness.ngrok-free.dev/",
-      pitchDeckUrl: ""
+      webLiveUrl: "https://sagging-rewind-happiness.ngrok-free.dev/"
     };
     // ═══════════════════════════════════════════════════════════════
 
@@ -715,12 +692,6 @@
     if (CONFIG.webLiveUrl) {
       document.getElementById("webLiveBtn").href = CONFIG.webLiveUrl;
       document.getElementById("webLiveLinkCard").href = CONFIG.webLiveUrl;
-    }
-
-    if (CONFIG.pitchDeckUrl) {
-      const card = document.getElementById("pitchDeckCard");
-      card.href = CONFIG.pitchDeckUrl;
-      card.style.display = "flex";
     }
   </script>
 

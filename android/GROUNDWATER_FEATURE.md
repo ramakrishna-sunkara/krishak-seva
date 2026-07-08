@@ -164,5 +164,4 @@ firebase deploy --only functions:getCropRecommendation --project kisan-alert-99b
 
 - [README.md](README.md) — Developer setup & feature list  
 - [APP_OVERVIEW.md](APP_OVERVIEW.md) — Plain-language feature guide  
-- [PITCH_DECK.md](PITCH_DECK.md) — Slide content for presentations  
 - [ARCHITECTURE.md](ARCHITECTURE.md) — Code structure  
