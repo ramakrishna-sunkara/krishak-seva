@@ -60,12 +60,14 @@ https://github.com/ramakrishna-sunkara/krishak-seva
 
 | Item | URL |
 |------|-----|
-| **Submission landing page** | `https://ramakrishna-sunkara.github.io/krishak-seva/submission/` (after GitHub Pages enabled) |
-| **Local preview** | Open `submission/index.html` in browser |
+| **Submission landing page** | `https://ramakrishna-sunkara.github.io/krishak-seva/` (GitHub Pages from `/docs`) |
+| **Local preview** | Open `docs/index.html` in browser |
 
-Enable GitHub Pages: repo **Settings → Pages → Source: Deploy from branch `main` → folder `/submission`**.
+**GitHub Pages setup:** repo **Settings → Pages → Branch: `main` → Folder: `/docs`** → Save.
 
-Before submitting, edit `submission/index.html` → `CONFIG` section → paste your **YouTube/Drive demo video URL**.
+> GitHub Pages only supports **`/` (root)** or **`/docs`** — not `/submission`. The page lives in `docs/index.html`.
+
+Before submitting, edit `docs/index.html` → `CONFIG` → paste your **YouTube demo video URLs**.
 
 ---
 
