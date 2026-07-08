@@ -209,6 +209,77 @@
       color: var(--slate-700);
     }
 
+    /* Google Cloud */
+    .gcp-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 28px;
+      font-size: 14px;
+      color: var(--slate-500);
+    }
+    .gcp-banner strong { color: #1a73e8; }
+    .gcp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .gcp-card {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .gcp-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--slate-200);
+    }
+    .gcp-card-header .gcp-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      background: linear-gradient(135deg, #e8f0fe 0%, #fce8e6 100%);
+    }
+    .gcp-card-header h3 { font-size: 1.1rem; margin: 0; }
+    .gcp-card-header span { font-size: 12px; color: var(--slate-500); display: block; margin-top: 2px; }
+    .gcp-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .gcp-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+    .gcp-list .gcp-svc {
+      flex-shrink: 0;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #1a73e8;
+      background: #e8f0fe;
+      padding: 4px 8px;
+      border-radius: 6px;
+      min-width: 88px;
+      text-align: center;
+    }
+    .gcp-list .gcp-desc strong { display: block; color: var(--slate-900); font-size: 14px; margin-bottom: 2px; }
+    .gcp-list .gcp-desc span { color: var(--slate-500); font-size: 13px; line-height: 1.45; }
+
     /* Video section */
     .video-grid {
       display: grid;
@@ -475,6 +546,132 @@
             </div>
           </div>
         </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Cloud -->
+  <section id="google-cloud">
+    <div class="container">
+      <div class="section-head">
+        <h2>Google Cloud Technologies</h2>
+        <p>Cloud-native services powering the Android app backend and web platform deployment.</p>
+      </div>
+      <div class="gcp-banner">
+        <span>Built on</span>
+        <strong>Google Cloud</strong>
+        <span>+ Firebase + Gemini AI</span>
+      </div>
+      <div class="gcp-grid">
+
+        <div class="gcp-card">
+          <div class="gcp-card-header">
+            <div class="gcp-icon">📱</div>
+            <div>
+              <h3>Android App</h3>
+              <span>Firebase &amp; Gemini on Google Cloud</span>
+            </div>
+          </div>
+          <ul class="gcp-list">
+            <li>
+              <span class="gcp-svc">Firebase</span>
+              <div class="gcp-desc">
+                <strong>Authentication</strong>
+                <span>Phone OTP sign-in for secure farmer login</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Firestore</span>
+              <div class="gcp-desc">
+                <strong>Cloud Firestore</strong>
+                <span>Farmer profiles, alerts, and scan history in real time</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Functions</span>
+              <div class="gcp-desc">
+                <strong>Cloud Functions</strong>
+                <span>Serverless API layer — Gemini keys never stored on device</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Gemini</span>
+              <div class="gcp-desc">
+                <strong>Google Gemini API</strong>
+                <span>Crop advice, weather guidance, disease vision, and voice Q&amp;A</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">FCM</span>
+              <div class="gcp-desc">
+                <strong>Firebase Cloud Messaging</strong>
+                <span>Push notifications for weather, irrigation, and farm risk alerts</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Storage</span>
+              <div class="gcp-desc">
+                <strong>Cloud Storage for Firebase</strong>
+                <span>Leaf images uploaded for AI crop disease diagnosis</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Crashlytics</span>
+              <div class="gcp-desc">
+                <strong>Firebase Crashlytics</strong>
+                <span>Production crash monitoring and stability tracking</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gcp-card">
+          <div class="gcp-card-header">
+            <div class="gcp-icon">🌐</div>
+            <div>
+              <h3>Web Platform</h3>
+              <span>Deployed on Google Cloud Run</span>
+            </div>
+          </div>
+          <ul class="gcp-list">
+            <li>
+              <span class="gcp-svc">Cloud Run</span>
+              <div class="gcp-desc">
+                <strong>Google Cloud Run</strong>
+                <span>Serverless hosting for Flask API + web frontend with auto HTTPS</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Cloud Build</span>
+              <div class="gcp-desc">
+                <strong>Google Cloud Build</strong>
+                <span>Container image builds and automated deployment pipeline</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Artifact Reg.</span>
+              <div class="gcp-desc">
+                <strong>Artifact Registry</strong>
+                <span>Docker image storage for Cloud Run deployments</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Cloud TTS</span>
+              <div class="gcp-desc">
+                <strong>Google Text-to-Speech (gTTS)</strong>
+                <span>Bilingual voice replies for IVR simulator and crop advisories</span>
+              </div>
+            </li>
+            <li>
+              <span class="gcp-svc">Containers</span>
+              <div class="gcp-desc">
+                <strong>Cloud Run + Gunicorn</strong>
+                <span>Production WSGI server inside Docker on <code>asia-south1</code> (Mumbai)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </div>
