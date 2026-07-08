@@ -61,6 +61,7 @@ https://github.com/ramakrishna-sunkara/krishak-seva
 | Item | URL |
 |------|-----|
 | **Submission landing page** | `https://ramakrishna-sunkara.github.io/krishak-seva/` (GitHub Pages from `/docs`) |
+| **Live web app (demo)** | `https://sagging-rewind-happiness.ngrok-free.dev/` |
 | **Local preview** | Open `docs/index.html` in browser |
 
 **GitHub Pages setup:** repo **Settings → Pages → Branch: `main` → Folder: `/docs`** → Save.

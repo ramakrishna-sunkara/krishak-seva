@@ -354,7 +354,7 @@
       <div class="hero-actions">
         <a class="btn btn-primary" href="https://github.com/ramakrishna-sunkara/krishak-seva" target="_blank" rel="noopener">📦 View Source Code</a>
         <a class="btn btn-secondary" id="apkDownloadBtn" href="https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk" target="_blank" rel="noopener">📲 Download Android APK</a>
-        <a class="btn btn-blue" id="webLiveBtn" href="#" target="_blank" rel="noopener" style="display:none;">🌐 Open Web App</a>
+        <a class="btn btn-blue" id="webLiveBtn" href="https://sagging-rewind-happiness.ngrok-free.dev/" target="_blank" rel="noopener">🌐 Open Live Web App</a>
       </div>
     </div>
   </header>
@@ -515,7 +515,7 @@
             <span id="webVideoLinkText">YouTube: </span>
             <a id="webVideoLink" href="https://www.youtube.com/watch?v=ne3afD0EVVA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=ne3afD0EVVA</a>
             <br /><br />
-            <small>Web platform walkthrough — dashboard, crop advisor, IVR helpline, SOS, and AI chatbot</small>
+            <small>Web platform walkthrough on YouTube — or <a href="https://sagging-rewind-happiness.ngrok-free.dev/" target="_blank" rel="noopener">try the live web app</a></small>
           </div>
         </div>
 
@@ -543,6 +543,13 @@
           <div>
             <h4>Android Source</h4>
             <p>Kotlin · Jetpack Compose · Firebase</p>
+          </div>
+        </a>
+        <a class="link-card" id="webLiveLinkCard" href="https://sagging-rewind-happiness.ngrok-free.dev/" target="_blank" rel="noopener">
+          <div class="link-icon web">🌐</div>
+          <div>
+            <h4>Live Web App (Demo)</h4>
+            <p>Try the full Krishak Seva web platform in your browser</p>
           </div>
         </a>
         <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva/tree/main/web" target="_blank" rel="noopener">
@@ -638,20 +645,6 @@
     </div>
   </section>
 
-  <!-- Elevator pitch -->
-  <section id="pitch">
-    <div class="container" style="text-align:center; max-width:720px;">
-      <div class="section-head">
-        <h2>Elevator Pitch</h2>
-      </div>
-      <blockquote style="font-size:1.1rem; color:var(--slate-700); font-style:italic; border-left:4px solid var(--green-600); padding:16px 24px; background:var(--white); border-radius:0 12px 12px 0; box-shadow:var(--shadow); text-align:left;">
-        “कृषकसेवा puts AI crop, weather, disease, and voice advice in one Telugu-friendly platform —
-        a native Android app for farmers in the field, plus a web ecosystem with IVR, SOS, and mandi intelligence.
-        Built for Indian farmers who need answers now, not English-only apps later.”
-      </blockquote>
-    </div>
-  </section>
-
   <footer>
     <div class="container">
       <p><strong>कृषकसेवा · Krishak Seva</strong> — Smart Water, Crop &amp; Advisory System</p>
@@ -670,7 +663,7 @@
       androidDemoVideoUrl: "https://youtu.be/poaejXC6EO4",
       webDemoVideoUrl: "https://www.youtube.com/watch?v=ne3afD0EVVA",
       apkDownloadUrl: "https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest/download/krishak-seva-debug.apk",
-      webLiveUrl: "",
+      webLiveUrl: "https://sagging-rewind-happiness.ngrok-free.dev/",
       pitchDeckUrl: ""
     };
     // ═══════════════════════════════════════════════════════════════
@@ -720,9 +713,8 @@
     }
 
     if (CONFIG.webLiveUrl) {
-      const btn = document.getElementById("webLiveBtn");
-      btn.href = CONFIG.webLiveUrl;
-      btn.style.display = "inline-flex";
+      document.getElementById("webLiveBtn").href = CONFIG.webLiveUrl;
+      document.getElementById("webLiveLinkCard").href = CONFIG.webLiveUrl;
     }
 
     if (CONFIG.pitchDeckUrl) {
