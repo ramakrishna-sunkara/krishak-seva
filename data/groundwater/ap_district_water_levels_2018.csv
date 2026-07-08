@@ -1,0 +1,26 @@
+state,district,season,well_count,min_depth_m_bgl,max_depth_m_bgl,avg_depth_m_bgl,wells_0_2m_pct,wells_2_5m_pct,wells_5_10m_pct,wells_10_20m_pct,wells_20_40m_pct,wells_gt_40m_pct,source,assessment_year
+Andhra Pradesh,Anantapur,pre_monsoon_may_2018,154,0.18,87.55,18.91,1,5,23,34,27,9,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Chittoor,pre_monsoon_may_2018,118,1.26,82.39,17.11,2,11,24,42,14,8,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,East Godavari,pre_monsoon_may_2018,98,1.05,69.19,9.76,9,29,35,14,11,2,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Guntur,pre_monsoon_may_2018,129,0.4,61.85,9.81,9,38,26,16,8,4,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Kadapa,pre_monsoon_may_2018,105,1.62,89.28,17.15,1,11,34,28,18,8,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Krishna,pre_monsoon_may_2018,111,1.2,93.69,12.11,5,19,32,30,11,3,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Kurnool,pre_monsoon_may_2018,151,1.07,48.88,8.63,7,26,36,23,5,1,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Nellore,pre_monsoon_may_2018,96,0.38,43.42,9.43,5,23,34,28,5,1,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Prakasam,pre_monsoon_may_2018,100,1.21,66.4,18.37,1,12,16,38,21,7,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Srikakulam,pre_monsoon_may_2018,37,1.05,27.59,7.12,5,41,35,19,0,0,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Visakhapatnam,pre_monsoon_may_2018,72,1.22,32.6,9.37,3,21,36,35,6,0,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Vizianagaram,pre_monsoon_may_2018,45,1.67,17.87,7.07,2,29,47,22,0,0,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,West Godavari,pre_monsoon_may_2018,72,2.24,76.78,20.16,0,11,28,26,22,11,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Anantapur,post_monsoon_nov_2018,154,0.31,89.3,21.4,2,6,16,35,29,12,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Chittoor,post_monsoon_nov_2018,118,0.53,96.86,20.12,3,8,21,40,12,14,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,East Godavari,post_monsoon_nov_2018,98,0.14,68.89,7.58,19,35,29,7,8,2,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Guntur,post_monsoon_nov_2018,129,0.05,62.05,8.81,27,24,24,12,7,4,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Kadapa,post_monsoon_nov_2018,105,0.95,90.0,19.99,2,10,34,20,18,15,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Krishna,post_monsoon_nov_2018,111,0.47,85.98,9.7,17,23,25,25,6,3,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Kurnool,post_monsoon_nov_2018,151,0.4,52.0,8.7,12,25,35,18,8,2,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Nellore,post_monsoon_nov_2018,96,0.47,43.82,10.23,7,17,31,38,6,1,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Prakasam,post_monsoon_nov_2018,100,1.92,58.37,19.54,1,11,14,32,26,13,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Srikakulam,post_monsoon_nov_2018,37,0.76,28.4,4.18,38,43,16,3,0,0,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,Visakhapatnam,post_monsoon_nov_2018,72,0.93,27.2,8.43,4,25,40,26,4,0,CGWB Ground Water Year Book 2018-19 AP,2018-19
+Andhra Pradesh,West Godavari,post_monsoon_nov_2018,72,1.06,75.85,17.7,6,18,28,21,17,11,CGWB Ground Water Year Book 2018-19 AP,2018-19

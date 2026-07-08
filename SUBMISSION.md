@@ -1,0 +1,163 @@
+# Hack2skill Prototype Submission — कृषकसेवा (Krishak Seva)
+
+**Deadline:** 8 July 2026, 11:59 PM IST  
+**Submit at:** Hack2skill dashboard → Submissions section
+
+---
+
+## Copy-paste for submission form
+
+### Brief description (short — ~150 words)
+
+**कृषकसेवा** is an AI-powered Android farming assistant built for Indian farmers, especially in Telugu-speaking regions. Farmers register their land profile (pincode, village, crop, soil, water source) and get personalized advice from one dashboard: smart crop recommendations by season (Kharif/Rabi/Zaid) **enriched with district-level CGWB groundwater data from [OpenCity.in](https://data.opencity.in/)**, weather + irrigation guidance, leaf disease detection via camera, voice Q&A in English or Telugu, and push alerts for farm risks.
+
+The app uses Google Gemini AI through secure Firebase Cloud Functions (API keys never stored on the device), OpenWeather for forecasts, and India Post pincode API for easy location entry. It works offline with cached data and local fallbacks when the network is weak — designed for real village conditions.
+
+**Tagline:** Smart Water, Crop & Advisory System
+
+---
+
+### Brief description (one paragraph — if field is smaller)
+
+कृषकसेवा is a mobile AI farming companion for Indian farmers. It combines crop recommendations, weather and irrigation advisories, AI crop disease scanning from leaf photos, a Telugu/English voice assistant, and push notifications — all personalized to the farmer’s profile. Built with Kotlin, Jetpack Compose, Firebase, and Google Gemini.
+
+---
+
+### Technologies used
+
+| Category | Technologies |
+|----------|--------------|
+| **Mobile app** | Kotlin, Jetpack Compose, Material 3, Navigation Compose |
+| **Architecture** | Clean Architecture, MVI, Repository pattern, Hilt (DI) |
+| **Local data** | Room Database, DataStore Preferences |
+| **Backend / cloud** | Firebase Auth, Firestore, Cloud Functions, FCM, Firebase Storage, Crashlytics |
+| **AI** | Google Gemini API (via Cloud Functions — crop, weather, disease vision, voice Q&A) |
+| **APIs** | OpenWeather API, India Post Pincode API (`api.postalpincode.in`), Agmarknet (via Cloud Function) |
+| **Open data** | [OpenCity.in](https://data.opencity.in/) — CGWB Ground Water Resources India 2022 (AP & Telangana district CSVs) |
+| **Android** | CameraX, SpeechRecognizer, Text-to-Speech, WorkManager |
+| **Networking** | Retrofit, OkHttp, Kotlinx Serialization |
+| **Build** | Gradle (KTS), ProGuard/R8 release builds |
+
+**Paste as bullet list:**
+
+```
+Kotlin, Jetpack Compose, Material 3, Clean Architecture, MVI, Hilt, Room, DataStore, Retrofit, Firebase (Auth, Firestore, Cloud Functions, FCM, Storage, Crashlytics), Google Gemini AI, OpenWeather API, India Post Pincode API, OpenCity CGWB Groundwater Data (2022), CameraX, SpeechRecognizer, Text-to-Speech, Navigation Compose, ProGuard
+```
+
+---
+
+### GitHub repository URL
+
+```
+https://github.com/YOUR_USERNAME/kisan-alert
+```
+
+Replace `YOUR_USERNAME` after you push (see checklist below).
+
+---
+
+### Working prototype link
+
+This is an **Android app** (not a website). Use **one or more** of these as your “deployed link”:
+
+| Option | What to submit | Best for |
+|--------|----------------|----------|
+| **A. GitHub Release (recommended)** | `https://github.com/YOUR_USERNAME/kisan-alert/releases/latest` | Judges download APK directly |
+| **B. Demo video** | YouTube / Google Drive link of 3–5 min walkthrough | Shows app working without install |
+| **C. Google Drive APK** | Public link to `app-release-unsigned.apk` | Quick share if no GitHub yet |
+
+**Recommended:** Submit **GitHub Releases URL + demo video link** in the description field if the form allows only one URL, put the video link and mention APK in GitHub Releases in the description.
+
+**APK location after build:**
+```
+app/build/outputs/apk/release/app-release-unsigned.apk
+```
+
+**Install note for judges:** Enable “Install from unknown sources” on Android, then install the APK. Firebase backend must be deployed for full AI features (see README.md).
+
+---
+
+## Submission checklist (do in order)
+
+### Today (Sunday — focus day)
+
+- [ ] **1. Pitch deck PDF** — Use [PITCH_DECK.md](PITCH_DECK.md) → create 10–12 slides in Google Slides / Canva / PowerPoint → Export as PDF
+- [ ] **2. Demo video (3–5 min)** — Record: language switch → register with pincode → dashboard → crop AI → weather → crop doctor → voice → notification
+- [ ] **3. GitHub** — Push code (see commands below)
+- [ ] **4. GitHub Release** — Upload `app-release-unsigned.apk` as release asset
+- [ ] **5. Firebase** — Confirm Cloud Functions + Firestore rules are deployed (`kisan-alert-99bb3`)
+- [ ] **6. Test on real phone** — Full flow once before submitting
+- [ ] **7. Hack2skill dashboard** — Fill all fields, cross-check, submit
+
+### GitHub setup (project is not in git yet)
+
+```bash
+cd /Users/ramakrishnasunkara/Desktop/hack2skill-challenge
+
+# Initialize repo
+git init
+git add .
+git commit -m "कृषकसेवा hackathon submission — AI farming assistant for Indian farmers"
+
+# Create repo on GitHub (github.com → New repository → kisan-alert → Public)
+git remote add origin https://github.com/YOUR_USERNAME/kisan-alert.git
+git branch -M main
+git push -u origin main
+```
+
+### GitHub Release (prototype link)
+
+1. GitHub repo → **Releases** → **Create a new release**
+2. Tag: `v1.0.1`
+3. Title: `कृषकसेवा v1.0.1 — Hackathon Prototype`
+4. Upload: `app/build/outputs/apk/release/app-release-unsigned.apk`
+5. Description: link to APP_OVERVIEW.md and demo video
+6. Publish → copy release URL for submission form
+
+### Before pushing — secrets check
+
+These are **gitignored** and safe (not pushed):
+
+- `local.properties` (OpenWeather API key)
+
+**Do not commit:** Gemini API keys, private keystores, or passwords. Gemini key lives only in Firebase Functions secrets.
+
+---
+
+## 5-minute demo script (for video or live pitch)
+
+| Time | Show | Say |
+|------|------|-----|
+| 0:00 | Splash + Telugu language | “कृषकसेवा — farmer selects Telugu, entire UI switches.” |
+| 0:30 | Pincode registration | “Enter pincode — village, district, state auto-fill.” |
+| 1:00 | Dashboard | “Weather, water score, crop health, irrigation tip in one screen.” |
+| 1:30 | Crop recommendation | “AI suggests Kharif crops with risk, water, fertilizer.” |
+| 2:00 | Weather advisory | “5-day forecast + when to irrigate.” |
+| 2:30 | Crop Doctor | “Photo of leaf → disease name + treatment.” |
+| 3:00 | Voice assistant | “Ask in Telugu — spoken AI answer.” |
+| 3:30 | Push notification | “Farm alert → bell badge → read advisory.” |
+| 4:00 | Closing | “कृषकसेवा — built for real Indian farmers, offline-friendly, Telugu-first.” |
+
+---
+
+## Files judges should read
+
+| File | Purpose |
+|------|---------|
+| [APP_OVERVIEW.md](APP_OVERVIEW.md) | Non-technical product overview |
+| [README.md](README.md) | Build, Firebase deploy, developer setup |
+| [PITCH_DECK.md](PITCH_DECK.md) | Slide content for PDF deck |
+| [GROUNDWATER_FEATURE.md](GROUNDWATER_FEATURE.md) | Groundwater data integration (OpenCity / CGWB) |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Technical architecture |
+
+---
+
+## Team formation
+
+Hack2skill dashboard → **Team Formation** → add up to 4 members before final submit.
+
+---
+
+## One-line elevator pitch
+
+> कृषकसेवा puts AI crop, weather, disease, and voice advice in one Telugu-friendly Android app — built for Indian farmers who need answers in the field, not in English-only apps.

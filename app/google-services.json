@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "42801174020",
+    "project_id": "kisan-alert-99bb3",
+    "storage_bucket": "kisan-alert-99bb3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42801174020:android:972d6663219a815c744751",
+        "android_client_info": {
+          "package_name": "com.kisanalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42801174020-9c8gp9miper10jat63oocs36s8i6g8c4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kisanalert",
+            "certificate_hash": "ee57ab2432db91deeec29dbc99cd4437e55368ee"
+          }
+        },
+        {
+          "client_id": "42801174020-7tbmci40agivtva4c132piaucqf3ru25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJecPg9kC0T9V998xamSTRDi1v1zBjtGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42801174020-7tbmci40agivtva4c132piaucqf3ru25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

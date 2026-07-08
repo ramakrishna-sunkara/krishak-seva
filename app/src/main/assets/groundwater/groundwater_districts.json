@@ -1,0 +1,896 @@
+[
+  {
+    "state": "Andhra Pradesh",
+    "district": "Alluri Sitharama Raju",
+    "stageOfExtractionPercent": 4.49,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 48452.68,
+    "totalAnnualExtractionHam": 2177.11,
+    "netAvailabilityForFutureHam": 46338.22,
+    "totalAnnualRechargeHam": 51002.98,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Alluri Sitharama Raju"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Anakapalli",
+    "stageOfExtractionPercent": 27.23,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 72097.55,
+    "totalAnnualExtractionHam": 19631.11,
+    "netAvailabilityForFutureHam": 51894.32,
+    "totalAnnualRechargeHam": 75892.18,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Anakapalli"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Ananthapuramu",
+    "stageOfExtractionPercent": 37.97,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 109522.78,
+    "totalAnnualExtractionHam": 41583.46,
+    "netAvailabilityForFutureHam": 67963.91,
+    "totalAnnualRechargeHam": 115287.3,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Anantapur",
+      "Ananthapuramu"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Annamayya",
+    "stageOfExtractionPercent": 51.32,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 87310.53,
+    "totalAnnualExtractionHam": 44809.42,
+    "netAvailabilityForFutureHam": 41403.27,
+    "totalAnnualRechargeHam": 91906.18,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Annamayya"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Bapatla",
+    "stageOfExtractionPercent": 21.97,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 62226.23,
+    "totalAnnualExtractionHam": 13671.35,
+    "netAvailabilityForFutureHam": 48560.72,
+    "totalAnnualRechargeHam": 65501.41,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Bapatla"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Chittoor",
+    "stageOfExtractionPercent": 56.5,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 89713.34,
+    "totalAnnualExtractionHam": 50684.8,
+    "netAvailabilityForFutureHam": 39055.95,
+    "totalAnnualRechargeHam": 94435.49,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Chittoor"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "East Godavari",
+    "stageOfExtractionPercent": 30.15,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 97781.81,
+    "totalAnnualExtractionHam": 29485.86,
+    "netAvailabilityForFutureHam": 69651.4,
+    "totalAnnualRechargeHam": 102928.11,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "East Godavari"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Eluru",
+    "stageOfExtractionPercent": 30.58,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 154028.28,
+    "totalAnnualExtractionHam": 47102.83,
+    "netAvailabilityForFutureHam": 106771.54,
+    "totalAnnualRechargeHam": 162135.27,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Eluru"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "stageOfExtractionPercent": 19.99,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 52450.03,
+    "totalAnnualExtractionHam": 10483.26,
+    "netAvailabilityForFutureHam": 41708.49,
+    "totalAnnualRechargeHam": 55210.59,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Guntur"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Kakinada",
+    "stageOfExtractionPercent": 17.21,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 88200.53,
+    "totalAnnualExtractionHam": 15179.26,
+    "netAvailabilityForFutureHam": 73507.65,
+    "totalAnnualRechargeHam": 92842.79,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Kakinada"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Konaseema",
+    "stageOfExtractionPercent": 16.6,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 103207.84,
+    "totalAnnualExtractionHam": 17135.22,
+    "netAvailabilityForFutureHam": 86094.29,
+    "totalAnnualRechargeHam": 108639.87,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Konaseema"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "stageOfExtractionPercent": 27.7,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 155687.79,
+    "totalAnnualExtractionHam": 43122.36,
+    "netAvailabilityForFutureHam": 111998.3,
+    "totalAnnualRechargeHam": 163882.07,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Krishna"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Kurnool",
+    "stageOfExtractionPercent": 19.69,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 87039.48,
+    "totalAnnualExtractionHam": 17141.82,
+    "netAvailabilityForFutureHam": 69721.54,
+    "totalAnnualRechargeHam": 91621.34,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Kurnool"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Nandyal",
+    "stageOfExtractionPercent": 18.63,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 76886.32,
+    "totalAnnualExtractionHam": 14323.3,
+    "netAvailabilityForFutureHam": 62563.02,
+    "totalAnnualRechargeHam": 80933.17,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Nandyal"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "NTR",
+    "stageOfExtractionPercent": 21.81,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 85996.13,
+    "totalAnnualExtractionHam": 18753.26,
+    "netAvailabilityForFutureHam": 67367.78,
+    "totalAnnualRechargeHam": 90522.22,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "NTR"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Palnadu",
+    "stageOfExtractionPercent": 30.19,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 97006.92,
+    "totalAnnualExtractionHam": 29290.26,
+    "netAvailabilityForFutureHam": 69213.03,
+    "totalAnnualRechargeHam": 102112.5,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Palnadu"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Parvathipuram Manyam",
+    "stageOfExtractionPercent": 20.81,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 91729.79,
+    "totalAnnualExtractionHam": 19087.29,
+    "netAvailabilityForFutureHam": 72973.79,
+    "totalAnnualRechargeHam": 96557.93,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Parvathipuram Manyam"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Prakasam",
+    "stageOfExtractionPercent": 32.37,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 95218.42,
+    "totalAnnualExtractionHam": 30823.48,
+    "netAvailabilityForFutureHam": 67121.35,
+    "totalAnnualRechargeHam": 100230.37,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Prakasam"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Sri Potti Sriramulu Nellore",
+    "stageOfExtractionPercent": 28.72,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 244639.87,
+    "totalAnnualExtractionHam": 70265.68,
+    "netAvailabilityForFutureHam": 175236.1,
+    "totalAnnualRechargeHam": 257516.03,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Nellore",
+      "Sri Potti Sriramulu Nellore"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Sri Sathya Sai",
+    "stageOfExtractionPercent": 56.74,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 111784.93,
+    "totalAnnualExtractionHam": 63424.26,
+    "netAvailabilityForFutureHam": 55820.51,
+    "totalAnnualRechargeHam": 117668.67,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Sri Sathya Sai"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Srikakulam",
+    "stageOfExtractionPercent": 18.88,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 93367.31,
+    "totalAnnualExtractionHam": 17625.92,
+    "netAvailabilityForFutureHam": 75129.08,
+    "totalAnnualRechargeHam": 98281.89,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Srikakulam"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Tirupati",
+    "stageOfExtractionPercent": 27.46,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 163890.38,
+    "totalAnnualExtractionHam": 45010.85,
+    "netAvailabilityForFutureHam": 118478.95,
+    "totalAnnualRechargeHam": 172516.76,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Tirupati"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam",
+    "stageOfExtractionPercent": 45.96,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 12862.6,
+    "totalAnnualExtractionHam": 5911.12,
+    "netAvailabilityForFutureHam": 6227.45,
+    "totalAnnualRechargeHam": 13539.7,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Visakhapatnam"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Vizianagaram",
+    "stageOfExtractionPercent": 23.42,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 140032.09,
+    "totalAnnualExtractionHam": 32800.76,
+    "netAvailabilityForFutureHam": 108617.97,
+    "totalAnnualRechargeHam": 147402.72,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Vizianagaram"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "West Godavari",
+    "stageOfExtractionPercent": 10.83,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 57309.67,
+    "totalAnnualExtractionHam": 6206.39,
+    "netAvailabilityForFutureHam": 50430.3,
+    "totalAnnualRechargeHam": 60325.91,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "West Godavari"
+    ]
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Y.S.R Kadapa",
+    "stageOfExtractionPercent": 36.49,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 107874.13,
+    "totalAnnualExtractionHam": 39365.98,
+    "netAvailabilityForFutureHam": 69773.57,
+    "totalAnnualRechargeHam": 113552.04,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Kadapa",
+      "Y.S.R Kadapa",
+      "YSR Kadapa"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Adilabad",
+    "stageOfExtractionPercent": 27.21,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 66485.25,
+    "totalAnnualExtractionHam": 18091.3,
+    "netAvailabilityForFutureHam": 48234.6,
+    "totalAnnualRechargeHam": 73665.09,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Adilabad"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Bhadradri Kothagudem",
+    "stageOfExtractionPercent": 32.09,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 85169.08,
+    "totalAnnualExtractionHam": 27334.45,
+    "netAvailabilityForFutureHam": 61203.33,
+    "totalAnnualRechargeHam": 93234.16,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Bhadradri Kothagudem"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Hanumakonda",
+    "stageOfExtractionPercent": 56.54,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 44753.89,
+    "totalAnnualExtractionHam": 25303.65,
+    "netAvailabilityForFutureHam": 20337.31,
+    "totalAnnualRechargeHam": 49463.14,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Hanumakonda"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "stageOfExtractionPercent": 95.99,
+    "category": "CRITICAL",
+    "annualExtractableResourceHam": 6647.43,
+    "totalAnnualExtractionHam": 6380.81,
+    "netAvailabilityForFutureHam": 308.53,
+    "totalAnnualRechargeHam": 7336.07,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Hyderabad"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Jagtial",
+    "stageOfExtractionPercent": 41.77,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 49478.39,
+    "totalAnnualExtractionHam": 20668.31,
+    "netAvailabilityForFutureHam": 27687.6,
+    "totalAnnualRechargeHam": 54701.0,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Jagtial"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Jangaon",
+    "stageOfExtractionPercent": 59.74,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 35767.33,
+    "totalAnnualExtractionHam": 21368.28,
+    "netAvailabilityForFutureHam": 14494.79,
+    "totalAnnualRechargeHam": 39513.12,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Jangaon"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Jayashankar Bhupalapally",
+    "stageOfExtractionPercent": 38.0,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 37784.21,
+    "totalAnnualExtractionHam": 14357.7,
+    "netAvailabilityForFutureHam": 23831.17,
+    "totalAnnualRechargeHam": 41351.19,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Jayashankar Bhupalapally",
+      "Jayashankar Bhupalpally"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Jogulamba Gadwal",
+    "stageOfExtractionPercent": 25.85,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 40973.21,
+    "totalAnnualExtractionHam": 10593.44,
+    "netAvailabilityForFutureHam": 29878.44,
+    "totalAnnualRechargeHam": 45419.49,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Jogulamba Gadwal"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Kamareddy",
+    "stageOfExtractionPercent": 53.86,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 62042.04,
+    "totalAnnualExtractionHam": 33415.52,
+    "netAvailabilityForFutureHam": 28158.68,
+    "totalAnnualRechargeHam": 68523.19,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Kamareddy"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Karimnagar",
+    "stageOfExtractionPercent": 33.33,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 78651.24,
+    "totalAnnualExtractionHam": 26217.16,
+    "netAvailabilityForFutureHam": 52499.59,
+    "totalAnnualRechargeHam": 87088.75,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Karimnagar"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Khammam",
+    "stageOfExtractionPercent": 34.84,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 114039.05,
+    "totalAnnualExtractionHam": 39733.05,
+    "netAvailabilityForFutureHam": 75152.04,
+    "totalAnnualRechargeHam": 126244.52,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Khammam"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Komarambheem Asifabad",
+    "stageOfExtractionPercent": 14.78,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 50313.67,
+    "totalAnnualExtractionHam": 7438.35,
+    "netAvailabilityForFutureHam": 42716.3,
+    "totalAnnualRechargeHam": 55023.68,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Komaram Bheem",
+      "Komarambheem Asifabad"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Mahabubabad",
+    "stageOfExtractionPercent": 50.81,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 56484.75,
+    "totalAnnualExtractionHam": 28698.56,
+    "netAvailabilityForFutureHam": 27680.89,
+    "totalAnnualRechargeHam": 62760.86,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Mahabubabad"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Mahabubnagar",
+    "stageOfExtractionPercent": 66.95,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 28445.49,
+    "totalAnnualExtractionHam": 19043.19,
+    "netAvailabilityForFutureHam": 9065.34,
+    "totalAnnualRechargeHam": 31425.62,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Mahabubnagar"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Mancherial",
+    "stageOfExtractionPercent": 25.9,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 80096.09,
+    "totalAnnualExtractionHam": 20741.15,
+    "netAvailabilityForFutureHam": 59735.53,
+    "totalAnnualRechargeHam": 88649.63,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Mancherial"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Medak",
+    "stageOfExtractionPercent": 49.43,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 46451.4,
+    "totalAnnualExtractionHam": 22962.09,
+    "netAvailabilityForFutureHam": 23245.39,
+    "totalAnnualRechargeHam": 51502.84,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Medak"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Medchal Malkajgiri",
+    "stageOfExtractionPercent": 56.99,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 9747.67,
+    "totalAnnualExtractionHam": 5555.33,
+    "netAvailabilityForFutureHam": 4494.61,
+    "totalAnnualRechargeHam": 10750.53,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Medchal Malkajgiri",
+      "Medchal-Malkajgiri"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Mulug",
+    "stageOfExtractionPercent": 28.74,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 43719.63,
+    "totalAnnualExtractionHam": 12566.06,
+    "netAvailabilityForFutureHam": 31534.23,
+    "totalAnnualRechargeHam": 48076.89,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Mulug"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Nagarkurnool",
+    "stageOfExtractionPercent": 46.78,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 72349.01,
+    "totalAnnualExtractionHam": 33842.48,
+    "netAvailabilityForFutureHam": 39212.5,
+    "totalAnnualRechargeHam": 79876.34,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Nagarkurnool"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Nalgonda",
+    "stageOfExtractionPercent": 43.89,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 128974.18,
+    "totalAnnualExtractionHam": 56607.07,
+    "netAvailabilityForFutureHam": 73734.19,
+    "totalAnnualRechargeHam": 142647.72,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Nalgonda"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Narayanpet",
+    "stageOfExtractionPercent": 42.27,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 28362.12,
+    "totalAnnualExtractionHam": 11989.46,
+    "netAvailabilityForFutureHam": 16075.87,
+    "totalAnnualRechargeHam": 31028.32,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Narayanpet"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Nirmal",
+    "stageOfExtractionPercent": 36.36,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 49285.58,
+    "totalAnnualExtractionHam": 17921.38,
+    "netAvailabilityForFutureHam": 31248.3,
+    "totalAnnualRechargeHam": 54519.63,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Nirmal"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Nizamabad",
+    "stageOfExtractionPercent": 59.05,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 88403.65,
+    "totalAnnualExtractionHam": 52204.92,
+    "netAvailabilityForFutureHam": 39172.76,
+    "totalAnnualRechargeHam": 97073.78,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Nizamabad"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Peddapalle",
+    "stageOfExtractionPercent": 29.32,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 65098.92,
+    "totalAnnualExtractionHam": 19088.32,
+    "netAvailabilityForFutureHam": 45434.79,
+    "totalAnnualRechargeHam": 72198.34,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Peddapalle",
+      "Peddapalli"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Rajanna Siricilla",
+    "stageOfExtractionPercent": 65.04,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 41628.77,
+    "totalAnnualExtractionHam": 27075.11,
+    "netAvailabilityForFutureHam": 14419.02,
+    "totalAnnualRechargeHam": 45810.27,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Rajanna Sircilla",
+      "Rajanna Siricilla"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Rangareddy",
+    "stageOfExtractionPercent": 60.21,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 58379.54,
+    "totalAnnualExtractionHam": 35151.89,
+    "netAvailabilityForFutureHam": 23417.95,
+    "totalAnnualRechargeHam": 64402.81,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Rangareddy"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Sangareddy",
+    "stageOfExtractionPercent": 45.1,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 40688.18,
+    "totalAnnualExtractionHam": 18350.68,
+    "netAvailabilityForFutureHam": 22619.44,
+    "totalAnnualRechargeHam": 45050.15,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Sangareddy"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Siddipet",
+    "stageOfExtractionPercent": 69.22,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 56747.22,
+    "totalAnnualExtractionHam": 39280.47,
+    "netAvailabilityForFutureHam": 17589.73,
+    "totalAnnualRechargeHam": 62437.64,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Siddipet"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Suryapet",
+    "stageOfExtractionPercent": 18.99,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 130427.75,
+    "totalAnnualExtractionHam": 24764.6,
+    "netAvailabilityForFutureHam": 105648.25,
+    "totalAnnualRechargeHam": 144842.52,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Suryapet"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Vikarabad",
+    "stageOfExtractionPercent": 37.27,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 48108.68,
+    "totalAnnualExtractionHam": 17928.39,
+    "netAvailabilityForFutureHam": 29800.63,
+    "totalAnnualRechargeHam": 53454.28,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Vikarabad"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Wanaparthy",
+    "stageOfExtractionPercent": 40.11,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 52308.53,
+    "totalAnnualExtractionHam": 20981.2,
+    "netAvailabilityForFutureHam": 30495.7,
+    "totalAnnualRechargeHam": 58072.47,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Wanaparthy"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Warangal",
+    "stageOfExtractionPercent": 55.59,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 46834.16,
+    "totalAnnualExtractionHam": 26036.94,
+    "netAvailabilityForFutureHam": 20952.04,
+    "totalAnnualRechargeHam": 51877.47,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Warangal"
+    ]
+  },
+  {
+    "state": "Telangana",
+    "district": "Yadadri Bhuvanagiri",
+    "stageOfExtractionPercent": 48.76,
+    "category": "SAFE",
+    "annualExtractableResourceHam": 80428.47,
+    "totalAnnualExtractionHam": 39214.77,
+    "netAvailabilityForFutureHam": 42496.99,
+    "totalAnnualRechargeHam": 89132.01,
+    "assessmentYear": "2022",
+    "source": "CGWB National Compilation via OpenCity CSV",
+    "districtAliases": [
+      "Yadadri Bhuvanagiri"
+    ]
+  }
+]
