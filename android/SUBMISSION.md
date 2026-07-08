@@ -56,12 +56,49 @@ https://github.com/ramakrishna-sunkara/krishak-seva
 
 ### Working prototype link
 
-This is an **Android app** (not a website). Use **one or more** of these as your “deployed link”:
+**Submit this single page to Hack2skill** (hosts all links, videos, docs):
+
+| Item | URL |
+|------|-----|
+| **Submission landing page** | `https://ramakrishna-sunkara.github.io/krishak-seva/submission/` (after GitHub Pages enabled) |
+| **Local preview** | Open `submission/index.html` in browser |
+
+Enable GitHub Pages: repo **Settings → Pages → Source: Deploy from branch `main` → folder `/submission`**.
+
+Before submitting, edit `submission/index.html` → `CONFIG` section → paste your **YouTube/Drive demo video URL**.
+
+---
+
+This is an **Android app** (not only a website). Also use **one or more** of these:
 
 | Option | What to submit | Best for |
 |--------|----------------|----------|
 | **A. GitHub Release (recommended)** | `https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest` | Judges download APK directly |
 | **B. Demo video** | YouTube / Google Drive link of 3–5 min walkthrough | Shows app working without install |
+
+**Your recording (local):**
+
+| Property | Value |
+|----------|--------|
+| **Source file** | `~/Downloads/Record_2026-07-08-22-04-16.mp4` |
+| **Duration** | ~9 min 45 sec (consider trimming to 5 min for judges) |
+| **Size** | ~318 MB (upload compressed copy from `android/demo/`) |
+| **Format** | 720×1600 portrait screen recording (good for mobile demo) |
+| **Compressed copy** | `android/demo/krishak-seva-demo-compressed.m4v` |
+
+**Upload before submit (pick one):**
+
+1. **Google Drive (fastest)** — Upload compressed MP4 → Share → “Anyone with the link” → paste link in Hack2skill form  
+2. **YouTube (best for judges)** — Upload as **Unlisted** → title: `Krishak Seva — Android Demo | Hack2skill` → paste link  
+3. **GitHub Release asset** — Attach only if under ~100 MB after compression (optional extra)
+
+**Paste in submission form (after upload):**
+
+```
+Demo video: <YOUR_YOUTUBE_OR_DRIVE_LINK>
+APK: https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest
+```
+
 | **C. Google Drive APK** | Public link to `app-release-unsigned.apk` | Quick share if no GitHub yet |
 
 **Recommended:** Submit **GitHub Releases URL + demo video link** in the description field if the form allows only one URL, put the video link and mention APK in GitHub Releases in the description.
@@ -80,7 +117,9 @@ app/build/outputs/apk/release/app-release-unsigned.apk
 ### Today (Sunday — focus day)
 
 - [ ] **1. Pitch deck PDF** — Use [PITCH_DECK.md](PITCH_DECK.md) → create 10–12 slides in Google Slides / Canva / PowerPoint → Export as PDF
-- [ ] **2. Demo video (3–5 min)** — Record: language switch → register with pincode → dashboard → crop AI → weather → crop doctor → voice → notification
+- [ ] **2. Demo video (3–5 min)** — Record: language switch → register with pincode → dashboard → crop AI → weather → crop doctor → voice → notification  
+  - **Recorded:** `Record_2026-07-08-22-04-16.mp4` (~9:45 — trim or use as-is)  
+  - **Next:** Upload to YouTube (Unlisted) or Google Drive → paste link in dashboard
 - [ ] **3. GitHub** — Push code (see commands below)
 - [ ] **4. GitHub Release** — Upload `app-release-unsigned.apk` as release asset
 - [ ] **5. Firebase** — Confirm Cloud Functions + Firestore rules are deployed (`kisan-alert-99bb3`)

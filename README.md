@@ -7,7 +7,18 @@ Two independent projects in one repository.
 | Project | Folder | Description |
 |---------|--------|-------------|
 | **Android** | [`android/`](android/) | Mobile farming assistant (Kotlin, Jetpack Compose, Firebase) |
-| **Web** | [`web/`](web/) | Separate web project |
+| **Web** | [`web/`](web/) | Full-stack web platform (Flask + vanilla JS) |
+| **Submission page** | [`submission/`](submission/) | **Hackathon landing page** — demos, links, docs |
+
+## Hackathon submission page
+
+Open or host **`submission/index.html`** — one page with Android + Web details, demo videos, code links, and documentation.
+
+```bash
+open submission/index.html
+```
+
+GitHub Pages URL (after enabling): `https://ramakrishna-sunkara.github.io/krishak-seva/submission/`
 
 ## Android
 

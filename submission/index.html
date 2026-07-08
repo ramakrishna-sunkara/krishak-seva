@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Krishak Seva (कृषकसेवा) — AI-powered farming assistant. Android app + Web platform for Indian farmers. Hackathon submission." />
+  <title>कृषकसेवा | Krishak Seva — Hackathon Submission</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-900: #14532d;
+      --green-700: #15803d;
+      --green-600: #16a34a;
+      --green-500: #22c55e;
+      --green-100: #dcfce7;
+      --green-50: #f0fdf4;
+      --amber-500: #f59e0b;
+      --blue-600: #2563eb;
+      --slate-900: #0f172a;
+      --slate-700: #334155;
+      --slate-500: #64748b;
+      --slate-200: #e2e8f0;
+      --slate-100: #f1f5f9;
+      --white: #ffffff;
+      --shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--slate-700);
+      background: linear-gradient(180deg, var(--green-50) 0%, var(--white) 280px);
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 { font-family: "Outfit", sans-serif; color: var(--slate-900); }
+    a { color: var(--green-700); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header {
+      padding: 48px 0 32px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green-100);
+      color: var(--green-900);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+    .hero-title span { color: var(--green-600); }
+    .tagline {
+      font-size: 1.15rem;
+      color: var(--slate-500);
+      max-width: 680px;
+      margin: 0 auto 12px;
+    }
+    .sanskrit {
+      font-size: 1rem;
+      color: var(--green-700);
+      font-weight: 600;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:hover { transform: translateY(-1px); text-decoration: none; }
+    .btn-primary {
+      background: var(--green-600);
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(22, 163, 74, 0.35);
+    }
+    .btn-secondary {
+      background: var(--white);
+      color: var(--green-700);
+      border: 1px solid var(--slate-200);
+    }
+    .btn-blue {
+      background: var(--blue-600);
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+    }
+
+    /* Sections */
+    section { padding: 48px 0; }
+    section:nth-child(even) { background: var(--slate-100); }
+    .section-head {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .section-head h2 { font-size: 1.75rem; margin-bottom: 8px; }
+    .section-head p { color: var(--slate-500); max-width: 620px; margin: 0 auto; }
+
+    /* Overview cards */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .overview-card {
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .overview-card .icon {
+      width: 44px; height: 44px;
+      background: var(--green-100);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+    .overview-card h3 { font-size: 1rem; margin-bottom: 6px; }
+    .overview-card p { font-size: 14px; color: var(--slate-500); }
+
+    /* Product split */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--slate-200);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .product-header {
+      padding: 24px 24px 16px;
+      border-bottom: 1px solid var(--slate-200);
+    }
+    .product-header.android { border-top: 4px solid var(--green-600); }
+    .product-header.web { border-top: 4px solid var(--blue-600); }
+    .product-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .product-header.android .product-label { color: var(--green-600); }
+    .product-header.web .product-label { color: var(--blue-600); }
+    .product-header h3 { font-size: 1.35rem; }
+    .product-body { padding: 20px 24px 24px; }
+    .product-body p { font-size: 14px; margin-bottom: 16px; }
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .feature-list li {
+      font-size: 14px;
+      padding-left: 22px;
+      position: relative;
+    }
+    .feature-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--green-600);
+      font-weight: 700;
+    }
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .tech-tag {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: var(--slate-100);
+      color: var(--slate-700);
+    }
+
+    /* Video section */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .video-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--slate-200);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .video-card h3 {
+      padding: 18px 20px 12px;
+      font-size: 1.05rem;
+    }
+    .video-embed {
+      aspect-ratio: 9 / 16;
+      max-height: 420px;
+      background: var(--slate-900);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 280px;
+    }
+    .video-embed iframe,
+    .video-embed video {
+      width: 100%;
+      height: 100%;
+      border: none;
+      object-fit: contain;
+    }
+    .video-placeholder {
+      text-align: center;
+      padding: 32px 20px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    .video-placeholder strong { display: block; color: #cbd5e1; margin-bottom: 8px; }
+    .video-links {
+      padding: 14px 20px 20px;
+      border-top: 1px solid var(--slate-200);
+      font-size: 13px;
+    }
+    .video-links a { font-weight: 600; }
+
+    /* Links grid */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .link-card {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: var(--white);
+      border: 1px solid var(--slate-200);
+      border-radius: 12px;
+      padding: 18px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .link-card:hover {
+      border-color: var(--green-500);
+      box-shadow: var(--shadow);
+      text-decoration: none;
+    }
+    .link-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .link-icon.code { background: #dbeafe; }
+    .link-icon.apk { background: var(--green-100); }
+    .link-icon.docs { background: #fef3c7; }
+    .link-icon.web { background: #ede9fe; }
+    .link-card h4 { font-size: 14px; margin-bottom: 2px; color: var(--slate-900); }
+    .link-card p { font-size: 12px; color: var(--slate-500); }
+
+    /* Docs table */
+    .docs-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--slate-200);
+    }
+    .docs-table th,
+    .docs-table td {
+      padding: 14px 18px;
+      text-align: left;
+      font-size: 14px;
+      border-bottom: 1px solid var(--slate-200);
+    }
+    .docs-table th {
+      background: var(--green-900);
+      color: var(--white);
+      font-weight: 600;
+    }
+    .docs-table tr:last-child td { border-bottom: none; }
+    .docs-table tr:hover td { background: var(--green-50); }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--slate-500);
+      font-size: 14px;
+      border-top: 1px solid var(--slate-200);
+    }
+    footer strong { color: var(--green-700); }
+
+    @media (max-width: 600px) {
+      header { padding: 32px 0 24px; }
+      section { padding: 36px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       EDIT THESE LINKS before submitting (search for CONFIG below)
+       ═══════════════════════════════════════════════════════════════ -->
+
+  <header>
+    <div class="container">
+      <div class="badge">🌾 Hack2skill Prototype Submission · July 2026</div>
+      <h1 class="hero-title"><span>कृषकसेवा</span> · Krishak Seva</h1>
+      <p class="sanskrit">हे कृषक, सुखी भव। · ఓ రైతు, వర్ధిల్లు!</p>
+      <p class="tagline">
+        Smart Water, Crop &amp; Advisory System — an AI-powered farming ecosystem for Indian farmers,
+        with a native <strong>Android app</strong> and a full <strong>web platform</strong> in English &amp; Telugu.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/ramakrishna-sunkara/krishak-seva" target="_blank" rel="noopener">📦 View Source Code</a>
+        <a class="btn btn-secondary" href="https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest" target="_blank" rel="noopener">📲 Download Android APK</a>
+        <a class="btn btn-blue" id="webLiveBtn" href="#" target="_blank" rel="noopener" style="display:none;">🌐 Open Web App</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2>What We Built</h2>
+        <p>
+          Krishak Seva helps small and marginal farmers make better decisions about water, crops,
+          diseases, and market prices — without needing an agronomist in every village.
+        </p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="icon">🌱</div>
+          <h3>Personalized Crop Advice</h3>
+          <p>Season-based recommendations (Kharif / Rabi / Zaid) using soil, weather, and groundwater data.</p>
+        </div>
+        <div class="overview-card">
+          <div class="icon">🌦️</div>
+          <h3>Weather &amp; Irrigation</h3>
+          <p>Live forecasts, dry-spell alerts, and practical irrigation guidance tailored to your crop.</p>
+        </div>
+        <div class="overview-card">
+          <div class="icon">🔬</div>
+          <h3>Crop Doctor</h3>
+          <p>Scan leaf photos with AI to detect disease, get treatment steps, and organic remedies.</p>
+        </div>
+        <div class="overview-card">
+          <div class="icon">🎙️</div>
+          <h3>Bilingual Voice AI</h3>
+          <p>Ask farming questions in English or Telugu — by voice or text — and get spoken answers.</p>
+        </div>
+        <div class="overview-card">
+          <div class="icon">📡</div>
+          <h3>Alerts &amp; SOS</h3>
+          <p>Push notifications for farm risks; web platform adds SMS, IVR helpline, and emergency SOS.</p>
+        </div>
+        <div class="overview-card">
+          <div class="icon">💧</div>
+          <h3>Groundwater Intelligence</h3>
+          <p>District-level CGWB data from <a href="https://data.opencity.in/" target="_blank">OpenCity.in</a> enriches crop suggestions in water-stressed areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <div class="container">
+      <div class="section-head">
+        <h2>Two Platforms, One Mission</h2>
+        <p>Mobile-first for farmers in the field; web platform for dashboards, IVR simulation, and broader reach.</p>
+      </div>
+      <div class="product-grid">
+
+        <!-- Android -->
+        <article class="product-card">
+          <div class="product-header android">
+            <div class="product-label">Mobile App</div>
+            <h3>कृषकसेवा Android</h3>
+          </div>
+          <div class="product-body">
+            <p>
+              A production-oriented Android app built for real village conditions — offline-friendly,
+              Telugu-first UI, and secure AI through Firebase Cloud Functions (API keys never on device).
+            </p>
+            <ul class="feature-list">
+              <li>Phone OTP &amp; guest login with farmer profile</li>
+              <li>Pincode auto-fill (village, district, state)</li>
+              <li>Smart dashboard: weather, water score, crop health</li>
+              <li>AI crop recommendations with groundwater enrichment</li>
+              <li>Camera / gallery disease detection (Crop Doctor)</li>
+              <li>Voice Q&amp;A in English &amp; Telugu</li>
+              <li>Push notifications for farm alerts</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Jetpack Compose</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Google Gemini</span>
+              <span class="tech-tag">Room</span>
+              <span class="tech-tag">Hilt</span>
+              <span class="tech-tag">CameraX</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Web -->
+        <article class="product-card">
+          <div class="product-header web">
+            <div class="product-label">Web Platform</div>
+            <h3>Krishak Seva Web</h3>
+          </div>
+          <div class="product-body">
+            <p>
+              A full-stack web companion with farmer registration, live mandi prices, crop advisor,
+              AI chatbot, IVR helpline simulator, and emergency SOS — deployable on Google Cloud Run.
+            </p>
+            <ul class="feature-list">
+              <li>OTP farmer login &amp; GPS-based registration</li>
+              <li>Live weather + 7-day forecast (Open-Meteo)</li>
+              <li>AI crop comparison &amp; profit calculator</li>
+              <li>Leaf disease diagnosis (photo + voice)</li>
+              <li>Bilingual floating AI chatbot (Groq Llama 3.1)</li>
+              <li>IVR phone simulator + Twilio outbound calls</li>
+              <li>SOS broadcast with GPS &amp; regional helplines</li>
+            </ul>
+            <div class="tech-tags">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Vanilla JS</span>
+              <span class="tech-tag">Groq AI</span>
+              <span class="tech-tag">Twilio</span>
+              <span class="tech-tag">SoilGrids API</span>
+              <span class="tech-tag">Cloud Run</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Videos -->
+  <section id="demos">
+    <div class="container">
+      <div class="section-head">
+        <h2>Demo Videos</h2>
+        <p>Watch the apps in action on YouTube — no files hosted on this page.</p>
+      </div>
+      <div class="video-grid">
+
+        <div class="video-card">
+          <h3>📱 Android App Demo</h3>
+          <div class="video-embed" id="androidVideoEmbed">
+            <div class="video-placeholder">
+              <strong>Loading Android demo…</strong>
+            </div>
+          </div>
+          <div class="video-links">
+            <span id="androidVideoLinkText">YouTube: </span>
+            <a id="androidVideoLink" href="https://youtu.be/poaejXC6EO4" target="_blank" rel="noopener">https://youtu.be/poaejXC6EO4</a>
+            <br /><br />
+            <small>Mobile app walkthrough — Telugu UI, pincode, dashboard, crop AI, weather, Crop Doctor, voice, alerts</small>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <h3>🌐 Web App Demo</h3>
+          <div class="video-embed" id="webVideoEmbed">
+            <div class="video-placeholder">
+              <strong>Web demo — coming soon</strong>
+              YouTube link will be added here.
+            </div>
+          </div>
+          <div class="video-links">
+            <span id="webVideoLinkText">YouTube: </span>
+            <a id="webVideoLink" href="#" style="color:var(--slate-500); pointer-events:none;">Coming soon</a>
+            <br /><br />
+            <small>Web platform walkthrough — dashboard, crop advisor, IVR, SOS (link to be added)</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section id="links">
+    <div class="container">
+      <div class="section-head">
+        <h2>Code &amp; Prototype Links</h2>
+        <p>Everything judges need to review, install, and explore the project.</p>
+      </div>
+      <div class="links-grid">
+        <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva" target="_blank" rel="noopener">
+          <div class="link-icon code">📦</div>
+          <div>
+            <h4>GitHub Repository</h4>
+            <p>Full source — Android + Web in one monorepo</p>
+          </div>
+        </a>
+        <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva/tree/main/android" target="_blank" rel="noopener">
+          <div class="link-icon code">📱</div>
+          <div>
+            <h4>Android Source</h4>
+            <p>Kotlin · Jetpack Compose · Firebase</p>
+          </div>
+        </a>
+        <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva/tree/main/web" target="_blank" rel="noopener">
+          <div class="link-icon web">🌐</div>
+          <div>
+            <h4>Web Source</h4>
+            <p>Flask backend + vanilla JS frontend</p>
+          </div>
+        </a>
+        <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva/releases/latest" target="_blank" rel="noopener">
+          <div class="link-icon apk">📲</div>
+          <div>
+            <h4>Android APK (Release)</h4>
+            <p>Install on Android — enable unknown sources</p>
+          </div>
+        </a>
+        <a class="link-card" href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/APP_OVERVIEW.md" target="_blank" rel="noopener">
+          <div class="link-icon docs">📄</div>
+          <div>
+            <h4>App Overview (for judges)</h4>
+            <p>Non-technical product walkthrough</p>
+          </div>
+        </a>
+        <a class="link-card" id="pitchDeckCard" href="#" target="_blank" rel="noopener" style="display:none;">
+          <div class="link-icon docs">📊</div>
+          <div>
+            <h4>Pitch Deck PDF</h4>
+            <p>Slides for presentation</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentation -->
+  <section id="documentation">
+    <div class="container">
+      <div class="section-head">
+        <h2>Documentation</h2>
+        <p>Detailed guides for judges, developers, and product reviewers.</p>
+      </div>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Description</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>App Overview</strong></td>
+            <td>What the app does — plain language, no code required</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/APP_OVERVIEW.md" target="_blank">Read →</a></td>
+          </tr>
+          <tr>
+            <td><strong>Submission Guide</strong></td>
+            <td>Hackathon copy-paste text, checklist, demo script</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/SUBMISSION.md" target="_blank">Read →</a></td>
+          </tr>
+          <tr>
+            <td><strong>Architecture</strong></td>
+            <td>Clean Architecture, MVI, Firebase, data flow</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/ARCHITECTURE.md" target="_blank">Read →</a></td>
+          </tr>
+          <tr>
+            <td><strong>Groundwater Feature</strong></td>
+            <td>OpenCity.in CGWB data integration for crop AI</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/GROUNDWATER_FEATURE.md" target="_blank">Read →</a></td>
+          </tr>
+          <tr>
+            <td><strong>Pitch Deck Content</strong></td>
+            <td>Slide-by-slide content for presentation PDF</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/PITCH_DECK.md" target="_blank">Read →</a></td>
+          </tr>
+          <tr>
+            <td><strong>Android README</strong></td>
+            <td>Build instructions, Firebase setup, developer guide</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/README.md" target="_blank">Read →</a></td>
+          </tr>
+          <tr>
+            <td><strong>Web README</strong></td>
+            <td>Flask setup, API overview, Google Cloud Run deploy</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/web/README.md" target="_blank">Read →</a></td>
+          </tr>
+          <tr>
+            <td><strong>Demo Video Guide</strong></td>
+            <td>How to upload and submit the Android screen recording</td>
+            <td><a href="https://github.com/ramakrishna-sunkara/krishak-seva/blob/main/android/DEMO_VIDEO.md" target="_blank">Read →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Elevator pitch -->
+  <section id="pitch">
+    <div class="container" style="text-align:center; max-width:720px;">
+      <div class="section-head">
+        <h2>Elevator Pitch</h2>
+      </div>
+      <blockquote style="font-size:1.1rem; color:var(--slate-700); font-style:italic; border-left:4px solid var(--green-600); padding:16px 24px; background:var(--white); border-radius:0 12px 12px 0; box-shadow:var(--shadow); text-align:left;">
+        “कृषकसेवा puts AI crop, weather, disease, and voice advice in one Telugu-friendly platform —
+        a native Android app for farmers in the field, plus a web ecosystem with IVR, SOS, and mandi intelligence.
+        Built for Indian farmers who need answers now, not English-only apps later.”
+      </blockquote>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>कृषकसेवा · Krishak Seva</strong> — Smart Water, Crop &amp; Advisory System</p>
+      <p style="margin-top:8px;">
+        <a href="https://github.com/ramakrishna-sunkara/krishak-seva">github.com/ramakrishna-sunkara/krishak-seva</a>
+      </p>
+      <p style="margin-top:12px; font-size:12px;">Hack2skill Prototype Submission · July 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    // ═══════════════════════════════════════════════════════════════
+    //  EDIT THESE VALUES before submitting to Hack2skill
+    // ═══════════════════════════════════════════════════════════════
+    const CONFIG = {
+      androidDemoVideoUrl: "https://youtu.be/poaejXC6EO4",
+      webDemoVideoUrl: "", // placeholder — add YouTube URL when ready
+      webLiveUrl: "",
+      pitchDeckUrl: ""
+    };
+    // ═══════════════════════════════════════════════════════════════
+
+    function toYouTubeEmbed(url) {
+      if (!url) return null;
+      const patterns = [
+        /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
+        /youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/
+      ];
+      for (const p of patterns) {
+        const m = url.match(p);
+        if (m) return `https://www.youtube.com/embed/${m[1]}?rel=0`;
+      }
+      return null;
+    }
+
+    function isGoogleDrive(url) {
+      return url && url.includes("drive.google.com");
+    }
+
+    function setupVideo(containerId, linkId, url) {
+      const container = document.getElementById(containerId);
+      const linkEl = document.getElementById(linkId);
+      if (!url) return;
+      linkEl.href = url;
+      linkEl.textContent = url.length > 48 ? url.slice(0, 48) + "…" : url;
+      linkEl.style.pointerEvents = "";
+      linkEl.style.color = "";
+      const embed = toYouTubeEmbed(url);
+      if (embed) {
+        container.innerHTML = `<iframe src="${embed}" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+      } else if (isGoogleDrive(url)) {
+        const driveId = url.match(/\/d\/([^/]+)/);
+        if (driveId) {
+          container.innerHTML = `<iframe src="https://drive.google.com/file/d/${driveId[1]}/preview"></iframe>`;
+        }
+      }
+    }
+
+    setupVideo("androidVideoEmbed", "androidVideoLink", CONFIG.androidDemoVideoUrl);
+    setupVideo("webVideoEmbed", "webVideoLink", CONFIG.webDemoVideoUrl);
+
+    if (CONFIG.webLiveUrl) {
+      const btn = document.getElementById("webLiveBtn");
+      btn.href = CONFIG.webLiveUrl;
+      btn.style.display = "inline-flex";
+    }
+
+    if (CONFIG.pitchDeckUrl) {
+      const card = document.getElementById("pitchDeckCard");
+      card.href = CONFIG.pitchDeckUrl;
+      card.style.display = "flex";
+    }
+  </script>
+
+</body>
+</html>

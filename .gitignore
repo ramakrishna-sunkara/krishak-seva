@@ -27,6 +27,8 @@ web/backend/.venv
 web/backend/uploads
 web/backend/temp_audio
 web/backend/static/audio_replies/*.mp3
+android/demo/*.mp4
+android/demo/*.mov
 
 # Root IDE leftovers
 /.gradle
