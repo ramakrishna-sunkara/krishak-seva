@@ -1,4 +1,4 @@
-# Hack2skill Prototype Submission — कृषकसेवा (Krishak Seva)
+# Hack2skill Prototype Submission — Krishak Seva (कृषकसेवा)
 
 **Deadline:** 8 July 2026, 11:59 PM IST  
 **Submit at:** Hack2skill dashboard → Submissions section
@@ -49,7 +49,7 @@ Kotlin, Jetpack Compose, Material 3, Clean Architecture, MVI, Hilt, Room, DataSt
 ### GitHub repository URL
 
 ```
-https://github.com/YOUR_USERNAME/kisan-alert
+https://github.com/YOUR_USERNAME/krishak-seva
 ```
 
 Replace `YOUR_USERNAME` after you push (see checklist below).
@@ -62,7 +62,7 @@ This is an **Android app** (not a website). Use **one or more** of these as your
 
 | Option | What to submit | Best for |
 |--------|----------------|----------|
-| **A. GitHub Release (recommended)** | `https://github.com/YOUR_USERNAME/kisan-alert/releases/latest` | Judges download APK directly |
+| **A. GitHub Release (recommended)** | `https://github.com/YOUR_USERNAME/krishak-seva/releases/latest` | Judges download APK directly |
 | **B. Demo video** | YouTube / Google Drive link of 3–5 min walkthrough | Shows app working without install |
 | **C. Google Drive APK** | Public link to `app-release-unsigned.apk` | Quick share if no GitHub yet |
 
@@ -89,18 +89,17 @@ app/build/outputs/apk/release/app-release-unsigned.apk
 - [ ] **6. Test on real phone** — Full flow once before submitting
 - [ ] **7. Hack2skill dashboard** — Fill all fields, cross-check, submit
 
-### GitHub setup (project is not in git yet)
+### GitHub setup
+
+Push from the repository root. The Android app lives in `android/`; web is a separate project in `web/`.
 
 ```bash
-cd /Users/ramakrishnasunkara/Desktop/hack2skill-challenge
-
-# Initialize repo
-git init
+cd /path/to/krishak-seva
 git add .
-git commit -m "कृषकसेवा hackathon submission — AI farming assistant for Indian farmers"
+git commit -m "Krishak Seva — AI farming assistant for Indian farmers"
 
-# Create repo on GitHub (github.com → New repository → kisan-alert → Public)
-git remote add origin https://github.com/YOUR_USERNAME/kisan-alert.git
+# Create repo on GitHub (github.com → New repository → krishak-seva → Public)
+git remote add origin https://github.com/YOUR_USERNAME/krishak-seva.git
 git branch -M main
 git push -u origin main
 ```
@@ -109,7 +108,7 @@ git push -u origin main
 
 1. GitHub repo → **Releases** → **Create a new release**
 2. Tag: `v1.0.1`
-3. Title: `कृषकसेवा v1.0.1 — Hackathon Prototype`
+3. Title: `Krishak Seva v1.0.1 — Hackathon Prototype`
 4. Upload: `app/build/outputs/apk/release/app-release-unsigned.apk`
 5. Description: link to APP_OVERVIEW.md and demo video
 6. Publish → copy release URL for submission form

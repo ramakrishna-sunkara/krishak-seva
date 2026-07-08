@@ -1,14 +1,28 @@
 *.iml
-.gradle
-/local.properties
-/.idea
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-app/build
-functions/node_modules
-.firebase
-*.apk
-*.aab
+
+# Android
+android/.gradle
+android/local.properties
+android/.idea
+android/build
+android/app/build
+android/.cxx
+android/.externalNativeBuild
+android/captures
+android/.firebase
+android/functions/node_modules
+android/*.apk
+android/*.aab
+
+# Web
+web/node_modules
+web/dist
+web/.next
+web/.env
+web/.env.local
+
+# Root IDE leftovers
+/.gradle
+/.idea
+/.kotlin

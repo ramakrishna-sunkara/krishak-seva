@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">कृषकसेवा</string>
+    <string name="app_name">Krishak Seva</string>
     <string name="splash_tagline">Smart Water, Crop &amp; Advisory System</string>
     <string name="splash_tagline_telugu">స్మార్ట్ నీరు, పంట &amp; సలహా వ్యవస్థ</string>
     <string name="splash_loading">Preparing your farm assistant…</string>
@@ -69,7 +69,7 @@
     <string name="registration_summary_farm">Farm</string>
     <string name="registration_summary_water">Water</string>
 
-    <string name="dashboard_title">कृषकसेवा</string>
+    <string name="dashboard_title">Krishak Seva</string>
     <string name="dashboard_refresh">Refresh</string>
     <string name="dashboard_notifications">Notifications</string>
     <string name="dashboard_welcome">Welcome, %1$s</string>
@@ -192,7 +192,7 @@
     <string name="crop_doctor_error_generic">Could not complete the diagnosis. Please try again later or contact the helpline below.</string>
 
     <string name="voice_assistant_title">Voice Assistant</string>
-    <string name="voice_assistant_header">कृषकसेवा Voice Advisor</string>
+    <string name="voice_assistant_header">Krishak Seva Voice Advisor</string>
     <string name="voice_assistant_subtitle">Hello %1$s — ask about %2$s in your language</string>
     <string name="voice_assistant_hint">Tap the mic and ask your farming question</string>
     <string name="voice_assistant_listening">Listening… speak now</string>
@@ -298,7 +298,7 @@
     <string name="validation_water_required">Select your water source.</string>
     <string name="validation_crop_required">Select or enter your current crop.</string>
 
-    <string name="alert_welcome_title">Welcome to कृषकसेवा</string>
+    <string name="alert_welcome_title">Welcome to Krishak Seva</string>
     <string name="alert_welcome_message">Your profile for %1$s in %2$s is set up successfully.</string>
     <string name="alert_weather_monitor_title">Weather Monitoring Active</string>
     <string name="alert_weather_monitor_message">We will notify you about rain and irrigation advisories for %1$s.</string>

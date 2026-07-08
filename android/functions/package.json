@@ -1,6 +1,6 @@
 {
-  "name": "kisan-alert-functions",
-  "description": "Firebase Cloud Functions for Kisan Alert",
+  "name": "krishak-seva-functions",
+  "description": "Firebase Cloud Functions for Krishak Seva",
   "engines": {
     "node": "22"
   },
