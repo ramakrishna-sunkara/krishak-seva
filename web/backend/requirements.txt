@@ -1,0 +1,19 @@
+flask
+flask-cors
+python-dotenv
+gunicorn
+requests
+groq
+gTTS
+twilio
+noisereduce
+pydub
+librosa
+soundfile
+numpy
+pillow
+
+# Optional local ML (heavy — omit on cloud hosts like Render free tier)
+# openai-whisper
+# torch
+# transformers

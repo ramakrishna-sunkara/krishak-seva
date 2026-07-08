@@ -21,6 +21,12 @@ web/dist
 web/.next
 web/.env
 web/.env.local
+web/backend/.env
+web/venv
+web/backend/.venv
+web/backend/uploads
+web/backend/temp_audio
+web/backend/static/audio_replies/*.mp3
 
 # Root IDE leftovers
 /.gradle

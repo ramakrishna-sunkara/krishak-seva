@@ -21,7 +21,11 @@ See [android/README.md](android/README.md).
 ## Web
 
 ```bash
-cd web
+cd web/backend
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python app.py
 ```
 
-See [web/README.md](web/README.md).
+Deploy to **Google Cloud Run**: see [web/README.md](web/README.md).
+

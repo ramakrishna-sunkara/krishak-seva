@@ -1,0 +1,15 @@
+venv
+.venv
+__pycache__
+*.pyc
+.env
+.env.*
+!.env.example
+uploads/
+temp_audio/
+static/audio_replies/*.mp3
+*.json.bak
+.git
+.gitignore
+../android
+../web/venv

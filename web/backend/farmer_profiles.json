@@ -1,0 +1,92 @@
+{
+  "9999999999": {
+    "phone": "9999999999",
+    "name": "Ravi",
+    "location": "Visakhapatnam",
+    "land_size_acres": 2.0,
+    "crop_type": "potato",
+    "soil_type": "alluvial",
+    "irrigation_method": "canal"
+  },
+  "99599999145": {
+    "phone": "99599999145",
+    "name": "Ravi",
+    "location": "srikakulam",
+    "land_size_acres": 3,
+    "crop_type": "rice",
+    "soil_type": "black",
+    "irrigation_method": "canal"
+  },
+  "0475827415": {
+    "phone": "0475827415",
+    "name": "",
+    "location": "unknown",
+    "land_size_acres": 5.0,
+    "crop_type": "wheat",
+    "soil_type": "black",
+    "irrigation_method": "adequate water"
+  },
+  "8150143019": {
+    "phone": "8150143019",
+    "name": "",
+    "location": "unknown",
+    "land_size_acres": 5.0,
+    "crop_type": "wheat",
+    "soil_type": "black",
+    "irrigation_method": "adequate water"
+  },
+  "+919515259020": {
+    "phone": "+919515259020",
+    "name": "",
+    "location": "unknown",
+    "land_size_acres": 5.0,
+    "crop_type": "wheat",
+    "soil_type": "black",
+    "irrigation_method": "adequate water"
+  },
+  "9012083075": {
+    "phone": "9012083075",
+    "name": "",
+    "location": "unknown",
+    "land_size_acres": null,
+    "crop_type": "rice",
+    "soil_type": "black",
+    "irrigation_method": ""
+  },
+  "+918247543026": {
+    "phone": "+918247543026",
+    "name": "Jhansi",
+    "location": "Visakhapatnam, Visakhapatnam Urban, Andhra Pradesh",
+    "land_size_acres": 3,
+    "crop_type": "wheat",
+    "soil_type": "alluvial",
+    "irrigation_method": "borewell"
+  },
+  "0307061330": {
+    "phone": "0307061330",
+    "name": "",
+    "location": "unknown",
+    "land_size_acres": null,
+    "crop_type": "wheat",
+    "soil_type": "alluvial",
+    "irrigation_method": ""
+  },
+  "2048909560": {
+    "phone": "2048909560",
+    "name": "",
+    "location": "unknown",
+    "land_size_acres": null,
+    "crop_type": "rice",
+    "soil_type": "alluvial",
+    "irrigation_method": ""
+  },
+  "8155512449": {
+    "phone": "8155512449",
+    "name": "",
+    "location": "unknown",
+    "land_size_acres": null,
+    "crop_type": "rice",
+    "soil_type": "black",
+    "irrigation_method": ""
+  }
+}
