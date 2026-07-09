@@ -7,42 +7,33 @@ Falls back to local whisper if Groq is unavailable.
 
 import os
 import uuid
-import numpy as np
-import librosa
-import soundfile as sf
-import noisereduce as nr
 from groq import Groq
 from dotenv import load_dotenv
 
-# Load env variables
-env_path = os.path.join(os.path.dirname(__file__), ".env")
-load_dotenv(dotenv_path=env_path)
+load_dotenv()
 
-# Initialize local Whisper once as fallback (base model for better accuracy than tiny)
+_IS_VERCEL = os.environ.get("VERCEL") == "1"
 _local_whisper_model = None
-
-TEMP_DIR = os.path.join(os.path.dirname(__file__), "temp_audio")
+TEMP_DIR = os.path.join("/tmp", "temp_audio") if _IS_VERCEL else os.path.join(os.path.dirname(__file__), "temp_audio")
 os.makedirs(TEMP_DIR, exist_ok=True)
-
-# Initialize Groq client
 _groq_key = os.environ.get("GROQ_API_KEY", "")
 _client = Groq(api_key=_groq_key) if _groq_key else None
 
-def _denoise_and_resample(input_path: str) -> str:
-    """Load audio, apply spectral-gating noise reduction, resample to 16kHz mono, save WAV."""
-    y, sr = librosa.load(input_path, sr=None, mono=True)
 
-    # Apply noise reduction
+def _denoise_and_resample(input_path: str) -> str:
+    if _IS_VERCEL:
+        return input_path
+    import librosa
+    import soundfile as sf
+    import noisereduce as nr
+    y, sr = librosa.load(input_path, sr=None, mono=True)
     if len(y) > sr:
         noise_clip = y[: int(sr * 0.5)]
         reduced = nr.reduce_noise(y=y, sr=sr, y_noise=noise_clip, stationary=False)
     else:
         reduced = nr.reduce_noise(y=y, sr=sr, stationary=False)
-
-    # Resample to 16kHz (Whisper's expected input rate)
     if sr != 16000:
         reduced = librosa.resample(reduced, orig_sr=sr, target_sr=16000)
-
     out_path = os.path.join(TEMP_DIR, f"{uuid.uuid4().hex}.wav")
     sf.write(out_path, reduced, 16000)
     return out_path
@@ -87,7 +78,9 @@ def transcribe_audio(input_path: str) -> dict:
         except Exception as e:
             print("Groq Whisper Cloud API failed, falling back to local model:", e)
 
-    # Fallback to Local Whisper Model
+    # Fallback to Local Whisper Model (not available on Vercel)
+    if _IS_VERCEL:
+        return {"transcript": transcript, "language": language}
     try:
         if _local_whisper_model is None:
             print("Loading local Whisper base model...")

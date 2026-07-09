@@ -7,7 +7,11 @@ if the team has time later.
 import os
 import json
 
-PROFILE_PATH = os.path.join(os.path.dirname(__file__), "farmer_profiles.json")
+PROFILE_PATH = (
+    os.path.join("/tmp", "farmer_profiles.json")
+    if os.environ.get("VERCEL") == "1"
+    else os.path.join(os.path.dirname(__file__), "farmer_profiles.json")
+)
 
 
 def _load_all() -> dict:

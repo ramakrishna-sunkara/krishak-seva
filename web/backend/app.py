@@ -29,6 +29,9 @@ app = Flask(__name__, static_folder="static")
 CORS(app)
 
 def get_public_host_url():
+    vercel_url = os.environ.get("VERCEL_URL", "")
+    if vercel_url:
+        return f"https://{vercel_url}"
     host = request.headers.get("Host", "")
     if "ngrok" in host:
         return f"https://{host}"
@@ -36,7 +39,7 @@ def get_public_host_url():
         return "https://sagging-rewind-happiness.ngrok-free.dev"
     return request.host_url
 
-UPLOAD_DIR = "uploads"
+UPLOAD_DIR = os.path.join("/tmp", "uploads") if os.environ.get("VERCEL") == "1" else "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
@@ -158,6 +161,9 @@ def photo_query():
             os.remove(audio_path)
 @app.route("/static/audio_replies/<filename>")
 def serve_audio_reply(filename):
+    tmp_path = os.path.join("/tmp", "audio_replies", filename)
+    if os.path.exists(tmp_path):
+        return send_from_directory(os.path.join("/tmp", "audio_replies"), filename)
     return send_from_directory(
         os.path.join("static", "audio_replies"), filename
     )

@@ -7,7 +7,11 @@ import os
 import uuid
 from gtts import gTTS
 
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "static", "audio_replies")
+OUTPUT_DIR = (
+    os.path.join("/tmp", "audio_replies")
+    if os.environ.get("VERCEL") == "1"
+    else os.path.join(os.path.dirname(__file__), "static", "audio_replies")
+)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Map Whisper's detected language codes to gTTS-supported codes.

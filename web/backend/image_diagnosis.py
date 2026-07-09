@@ -16,6 +16,8 @@ _groq_key = os.environ.get("GROQ_API_KEY", "")
 
 
 def _load_local_model():
+    if os.environ.get("VERCEL") == "1":
+        return False
     global _feature_extractor, _model
     if _model is not None:
         return True
